@@ -1,0 +1,291 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% TEMPLATE: Accessible Mathematics Lecture (PDF/UA-2 Compliant)
+%% TARGET:   Math/Stat Faculty
+%% ENGINE:   LuaLaTeX (Required for MathML generation)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\DocumentMetadata{
+	uncompress,
+	lang          = en-US,
+	pdfstandard   = ua-2,
+	pdfstandard   = a-4f,
+	tagging       = on,
+	tagging-setup = {math/setup=mathml-SE},
+	pdfversion    = 2.0
+}
+
+%\documentclass{ltx-talk}
+\documentclass[mode=handout]{ltx-talk} % Use for handout generation and ADA compliance
+
+% --- Metadata ---
+\title{Title}
+\subtitle{Subtitle}
+\author{Author}
+\date{\today}
+
+%%% code to create function that shows/hides solutions
+% --- Solution Toggle & Logic ---
+\newif\ifshowsolutions
+\showsolutionstrue  
+% to create student version set to 
+%\showsolutionsfalse 
+\newcommand{\sol}[2][1cm]{\ifshowsolutions #2 \else \vspace{#1} \fi}
+
+\input{SlidesPreambleADA.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+	
+	\begin{frame}
+		\maketitle[framestyle=plain]
+	\end{frame}
+	
+	\section{Architecture and Compliance}
+	\begin{frame}
+		\frametitle{Technical Requirements}
+		Reference: \href{https://people.clas.ufl.edu/jnowell/latex-accessibility/}{Dr. Jason Nowell}.
+		\vspace{0.5cm}
+		
+		\textbf{Critical Workflow Components:}
+		\begin{itemize}
+			\item \textbf{Engine:} Use \texttt{LuaLaTeX} for its superior handling of OpenType math fonts, which is critical for MathML generation in order to populate math tags.
+			\item \textbf{Kernel:} Use the Phase 3 Beta kernel (released Nov 1st, 2025, or later).
+			\item \textbf{Preamble:} Use preamble and accessibility packages provided in this presentation and reference.  For slides use (highly experimental) document class \href{https://ctan.math.illinois.edu/macros/latex/contrib/ltx-talk/ltx-talk.pdf}{\texttt{ltx-talk}}.
+			\item \textbf{Validation:}
+			\begin{itemize}
+				\item \textbf{Structural:} Use \href{https://openpreservation.org/tools/verapdf/}{veraPDF} (Industry Standard).  Also recommend  checker \href{https://pac.pdf-accessibility.org/en}{PAC 2026} with detailed report and built-in screen reader.
+				\item \textbf{Semantic:} Verify with screen readers (NVDA, JAWS, or VoiceOver).
+			\end{itemize}
+			\item \textbf{Best Practices:} Prioritize structural simplicity to ensure tag-tree integrity.
+		\end{itemize}
+	\end{frame}
+	
+	\section{Lists/Tables/Figures}
+	
+	\begin{frame}
+		\frametitle{Lists}
+		Ordered and unordered lists are automatically tagged for screen reader navigation.  Lists in this template have been defaulted to have 10pt separation. Here is an example of a list with custom overlays:
+		\begin{itemize}
+			\item<1-4> First item.
+			\item<2-4> Second item.
+			\item<3-4> Third item.
+			\item<4> Fourth item (while also displaying third).
+		\end{itemize}
+	\end{frame}
+	
+	\begin{frame*}
+		\frametitle{Table}
+		Tables require explicit header row identification for data association in screen readers. Use \verb|\tagpdfsetup{table/header-rows={1}}|.
+		\vspace{0.5cm}
+		
+		\textit{Known Limitation:} If you encounter issues with regular captions, use the \texttt{makebox} workaround shown.\\ \verb|\makebox[0pt][c]{Table 1: Calculated Standard Errors}|
+		\vspace{0.5cm}
+		
+		
+		% Use booktabs rules (\toprule, \midrule, \bottomrule) for accessibility.
+		% Do not use vertical lines (|), as they break logical reading order.
+		\begin{table}
+			\centering
+			\tagpdfsetup{table/header-rows={1}}
+			\begin{tabular}{lrr}
+				\toprule
+				\textbf{Method} & \textbf{Sample Size ($n$)} & \textbf{Standard Error} \\
+				\midrule
+				Simple Random   & 100                        & 0.050                  \\
+				Stratified      & 100                        & 0.032                  \\
+				Cluster         & 100                        & 0.075                  \\
+				\bottomrule
+			\end{tabular}
+            
+            \makebox[0pt][c]{Table 1: Calculated Standard Errors}
+		%\caption{Calculated Standard Errors}
+		\end{table}
+	\end{frame*}
+	
+		
+	\begin{frame*}
+		\frametitle{Figures}
+		\begin{itemize}
+			\item \textbf{Alt Text:} Mandatory for all non-artifact images.
+			\item \textbf{Color Space:} Avoid CMYK (.eps). Use RGB (.png/.jpg) to ensure compliance with digital accessibility standards.
+		\end{itemize}
+		\vspace{0.5cm}
+		\begin{verbatim}
+		\includegraphics[width=0.5\textwidth,alt={University of Florida logo:
+		a blue rectangle containing the letters UF in orange and the words 
+		UNIVERSITY of FLORIDA below.}]{Logo_RGB_Raster.png}
+		\end{verbatim}
+		\begin{figure}
+			\centering
+			\includegraphics[width=0.5\textwidth,alt={University of Florida logo: a horizontal logo with the blue letters U F, seperated by an orange vertical line to the words UNIVERSITY of FLORIDA to the left.}]{Logo_RGB_Raster.png}
+            
+            \makebox[0pt][c]{Figure 1: Official UF Signature Logo}
+			%\caption{Official UF Signature Logo} %Currently captions fail compliance, work in progress
+		\end{figure}
+	\end{frame*}
+	
+	\section{Math/Verbatim}
+	
+	\begin{frame}
+		\frametitle{Automatic MathML Support}
+		An example of a slide containing math.
+		\begin{itemize}
+			\item<1-2> \textbf{Sampling distribution:} \\
+			Let $T(Y_1, Y_2, \dots, Y_n)$ be some \textit{statistic}, i.e., some function of the data.
+			Then, we call the probability distribution of $T(Y_1, Y_2, \dots, Y_n)$ the \emph{sampling distribution}.
+			
+			
+			\item<2> \textbf{Standard error:} \\
+			The \emph{standard error} of an estimator $\hat{\theta}$ is the standard deviation of the sampling distribution:
+			\[ \mathrm{SE}\left(\hat{\theta}\right) = \sqrt{E\left[\left(\hat{\theta}-\theta\right)^2\right]} \]
+		\end{itemize}
+		\begin{block}<3>{Block}
+			This is a block, like a theorem.  Background colors can cause issues, even if color scheme is appropriate.
+		\end{block}
+	\end{frame}
+	
+	\begin{frame*}
+		\frametitle{Verbatim}
+		Unlike beamer where we used:\\
+		\verb|\begin{frame}[fragile]|
+			
+		\vspace{0.5cm}
+		With \verb|ltx-talk|, simply use\\
+		\verb|\begin{frame*}...|\\
+		Note that this command cannot be nested within another command.
+	\end{frame*}
+	
+	\section{Custom Frames and Blocks}
+	\begin{frame}
+		\frametitle{Custom Blocks}
+		\begin{theory}[Optional Title]
+			This is a theorem
+		\end{theory}
+		\begin{example}[Optional Title]
+			This is an example.
+		\end{example}
+		\begin{remark}[Optional Title]
+			This is a remark.
+		\end{remark}
+		
+	\end{frame}
+	
+	\exampleon
+	\begin{frame*}
+		\frametitle{Example}
+	This is an example that takes up the whole slide.  A block is not sufficient. We create an example frame using:
+\begin{Verbatim}
+\exampleon
+\begin{frame}
+...
+\end{frame}
+\exampleoff
+\end{Verbatim}
+
+\vspace{1cm}
+	Similarly we can completely remove the top banner using:
+\begin{Verbatim}
+\banneroff
+\begin{frame}
+...
+\end{frame}
+\banneron
+\end{Verbatim}
+	\end{frame*}
+	\exampleoff
+	
+	\section{Toggle Visibility Logic}
+	\begin{frame}
+		\frametitle{Toggle Visibility Logic}
+		
+		Current Mode: \ifshowsolutions \textbf{Solutions Visible} \else \textbf{Student Handout} \fi
+		
+		In preamble comment out one:
+		\begin{itemize}
+			\item[] \textbackslash showsolutionstrue
+			\item[] \textbackslash showsolutionsfalse
+		\end{itemize}
+		
+		
+		% The \sol command handles the conditional logic internally
+		\sol[3cm]{
+			\begin{align*}
+				V\left(\hat\mu\right) &= V\left(\frac{1}{n}\sum_{i=1}^n Y_i\right)\\
+				&= \frac{1}{n^2}\sum_{i=1}^n V(Y_i) = \frac{\sigma^2}{n}\\
+				\Longrightarrow \mathrm{SE}\left(\hat\mu\right) &= \frac{\sigma}{\sqrt{n}}
+			\end{align*}
+		}
+		
+		\begin{block}{Preamble Command Used}
+			\small
+			\texttt{\textbackslash sol[space\_when\_false]\{content when true\}}\\ allows for a single-source workflow, generating an ``Instructor'' and ``Student'' version easily.
+		\end{block}
+	\end{frame}
+	
+	
+	\begin{frame}
+		\frametitle{Overlay in \texttt{align*}}
+		Use of \texttt{\textbackslash onslide} within \texttt{align*} to present specific lines.
+		\begin{align*}
+			\onslide<1-> x &= x\\
+			\onslide<2> y &= y
+		\end{align*}
+	\end{frame}
+	
+	\begin{frame*}
+		\frametitle{Temporal Overlays}
+		\fade<1> With the use of \texttt{\textbackslash temporal}, can create faded overlays whereby a before, current, and after options can be chosen.
+		\begin{verbatim}
+			\NewDocumentCommand\fade{D<>{all}}{%
+				\temporal<#1>{\color{black!70}}{\color{black}}{\color{black!10}}
+			}
+		\end{verbatim}
+		\vspace{-0.5cm}
+		
+		\begin{enumerate}
+			\fade<2> \item First item.
+			\fade<3> \item Second item.
+			\fade<4-5>\item Third item.
+			\fade<6>\item Fourth item (while also displaying third).
+		\end{enumerate}
+		\vspace{1cm}
+		
+		\fade<7->{\textit{Note:} Unlike standard overlays, temporal overlays for lists retain visible bullets.  The use of \texttt{\textbackslash temporal} inside a list, the new kernel's tagging engine (tagpdf) forces the item bullet to be a protected "Label"}
+		
+	\end{frame*}
+	
+	
+	\begin{frame}
+		\frametitle{Overlay Suppression}
+		To generate a static version for student notes, use:
+		\vspace{0.3cm}
+		\begin{center}
+			\large \texttt{\textbackslash documentclass[mode=handout]\{ltx-talk\}}
+		\end{center}
+		\vspace{0.3cm}
+	\end{frame}
+	
+	
+	\section{UF Brand Center}
+	
+	\begin{frame}
+		\frametitle{Colors and Typography}
+		\href{https://brandcenter.ufl.edu/}{UF Brand Center} has resources on appropriate use of:
+		\begin{itemize}
+			\item COLORS, including \href{https://brandcenter.ufl.edu/colors/}{AA-Compliant Color Formulas for Screen Applications}
+			\item TYPOGRAPHY, including \href{https://brandcenter.ufl.edu/typography/}{Extended Character Language Support and Accessibility}
+		\end{itemize} 
+	\end{frame}
+
+	\section{Summary}
+	\begin{frame}
+		\frametitle{Key takeaways}
+		\begin{itemize}[<+->]
+			\item \textbf{Mandatory Engine:} \texttt{LuaLaTex}.
+			\item \textbf{Kernel Release:} kernel dated 2025.11.01 or later.
+			\item \textbf{Preamble:} Appropriate calls are used in preamble. For presentations use \texttt{ltx-talk}. 
+			\item \textbf{Best Practices:} Still highly experimental, keep it simple.  
+			\item \textbf{Future:} Development is ongoing.
+		\end{itemize}
+	\end{frame}
+
+\end{document}

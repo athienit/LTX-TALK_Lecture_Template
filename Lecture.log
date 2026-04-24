@@ -1,0 +1,1898 @@
+This is LuaHBTeX, Version 1.24.0 (MiKTeX 25.12) (format=lualatex 2026.1.20)  24 APR 2026 14:27
+ restricted system commands enabled.
+**Lecture.tex
+(./Lecture.tex
+LaTeX2e <2025-11-01>
+L3 programming layer <2025-12-29>
+Lua module: luaotfload 2024-12-03 v3.29 Lua based OpenType font support
+Lua module: lualibs 2023-07-13 v2.76 ConTeXt Lua standard libraries.
+Lua module: lualibs-extended 2023-07-13 v2.76 ConTeXt Lua libraries -- extended 
+collection.
+luaotfload | conf : Root cache directory is "C:/Users/forge/AppData/Local/MiKTeX
+/luatex-cache/generic/names".
+luaotfload | init : Loading fontloader "fontloader-2023-12-28.lua" from kpse-res
+olved path "C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/luatex/luaotfload/f
+ontloader-2023-12-28.lua".
+Lua-only attribute luaotfload@noligature = 1
+luaotfload | init : Context OpenType loader version 3.134
+Inserting `luaotfload.node_processor' in `pre_linebreak_filter'.
+Inserting `luaotfload.node_processor' in `hpack_filter'.
+Inserting `luaotfload.glyph_stream' in `glyph_stream_provider'.
+Inserting `luaotfload.define_font' in `define_font'.
+Lua-only attribute luaotfload_color_attribute = 2
+luaotfload | conf : Root cache directory is "C:/Users/forge/AppData/Local/MiKTeX
+/luatex-cache/generic/names".
+Inserting `luaotfload.harf.strip_prefix' in `find_opentype_file'.
+Inserting `luaotfload.harf.strip_prefix' in `find_truetype_file'.
+Removing  `luaotfload.glyph_stream' from `glyph_stream_provider'.
+Inserting `luaotfload.harf.glyphstream' in `glyph_stream_provider'.
+Inserting `luaotfload.harf.finalize_vlist' in `post_linebreak_filter'.
+Inserting `luaotfload.harf.finalize_hlist' in `hpack_filter'.
+Inserting `luaotfload.cleanup_files' in `wrapup_run'.
+Inserting `luaotfload.harf.finalize_unicode' in `finish_pdffile'.
+Inserting `luaotfload.glyphinfo' in `glyph_info'.
+Lua-only attribute luaotfload.letterspace_done = 3
+Inserting `luaotfload.aux.set_sscale_dimens' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.set_font_index' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.patch_cambria_domh' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.fixup_fontdata' in `luaotfload.patch_font_unsafe'.
+Inserting `luaotfload.aux.set_capheight' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.set_xheight' in `luaotfload.patch_font'.
+Inserting `luaotfload.rewrite_fontname' in `luaotfload.patch_font'.
+Inserting `tracingstacklevels' in `input_level_string'.
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/latex-lab/documentmetad
+ata-support.ltx
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/pdfmanagement-testphase
+/pdfmanagement-testphase.sty
+Package: pdfmanagement-testphase 2025-11-12 v0.96x LaTeX PDF management bundle
+
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/tagpdf/tagpdf-base.sty
+Package: tagpdf-base 2026-01-12 v0.99x part of tagpdf - provide base, no-op ver
+sions of the user commands 
+\c@g__tag_MCID_abs_int=\count273
+\c@g__tag_struct_abs_int=\count274
+)
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/pdfmanagement-testphase
+/pdfmanagement.ltx
+File: pdfmanagement.ltx 2025-11-12 v0.96x PDF management code
+\g__pdfmanagement_EmbeddedFiles_int=\count275
+\l__pdfmeta_xmp_indent_int=\count276
+\g_pdffile_embed_pdfa_int=\count277
+\g_pdffile_embed_nonpdfa_int=\count278
+)))
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/l3backend/l3backend-lua
+tex.def
+File: l3backend-luatex.def 2025-10-09 L3 backend support: PDF output (LuaTeX)
+\l__color_backend_stack_int=\count279
+Inserting `l3color' in `luaotfload.parse_color'.
+Inserting `l3opacity' in `luaotfload.parse_transparent'.)
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/pdfmanagement-testphase
+/l3backend-testphase-luatex.def
+File: l3backend-testphase-luatex.def 2025-11-12 v0.96s LaTeX PDF management bun
+dle backend support:PDFoutput(LuaTeX)
+\l__pdf_backend_tmpa_box=\box53
+\l__pdf_backend_tmpb_box=\box54
+\g__pdf_backend_resourceid_int=\count280
+\g__pdf_backend_name_int=\count281
+\g__pdf_backend_page_int=\count282
+Custom whatsit pdf_link_adjust_level = 1
+Inserting `linksplit' in `pre_shipout_filter'.
+Lua function pdflinkadjustlevel = 31)
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/latex-lab/latex-lab-tes
+tphase-latest.sty
+Package: latex-lab-testphase-latest 2025-09-13 v0.1d latex-lab modules
+
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/tagpdf/tagpdf.sty
+Package: tagpdf 2026-01-12 v0.99x  LaTeX kernel code for PDF tagging 
+\l__tag_tmpa_int=\count283
+\l__tag_tmpa_box=\box55
+\l__tag_tmpb_box=\box56
+\l__tag_loglevel_int=\count284
+\g__tag_unique_cnt_int=\count285
+\l__tag_tag_stop_int=\count286
+
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/tagpdf/tagpdf-luatex.de
+f
+File: tagpdf-luatex.def 2026-01-12 v0.99x tagpdf driver for luatex
+luaotfload | db : Font names database loaded from C:/Users/forge/AppData/Local/M
+iKTeX/luatex-cache/generic/names/luaotfload-names.luc.gz
+Lua module: tagpdf 2026-01-12 v0.99x tagpdf lua code
+Lua-only attribute g__tag_mc_type_attr = 4
+Lua-only attribute g__tag_mc_cnt_attr = 5
+Lua-only attribute g__tag_structnum_attr = 6
+Lua-only attribute g__tag_interwordspaceOff_attr = 7
+Lua-only attribute g__tag_interwordspace_attr = 8
+Lua-only attribute g__tag_interwordfont_attr = 9
+Inserting `tagpdf.rewrite-softhyphen' in `pre_shaping_filter'.
+Inserting `tagpdf.rewrite-softhyphen' in `post_shaping_filter'.
+Inserting `tagpdf' in `linksplit'.)
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/tagpdf/tagpdf-mc-code-l
+ua.sty
+Package: tagpdf-mc-code-lua 2026-01-12 v0.99x tagpdf - mc code only for the lua
+mode 
+)
+\g__tag_tree_id_pad_int=\count287
+\c@g__tag_parenttree_obj_int=\count288
+
+Package tagpdf Info: reading namespace definitions tagpdf-ns-pdf.def
+
+
+Package tagpdf Info: reading namespace definitions tagpdf-ns-pdf2.def
+
+
+Package tagpdf Info: reading namespace definitions tagpdf-ns-mathml.def
+
+
+Package tagpdf Info: reading namespace definitions tagpdf-ns-latex-book.def
+
+
+Package tagpdf Info: reading namespace definitions tagpdf-ns-latex.def
+
+
+Package tagpdf Info: reading namespace definitions tagpdf-ns-latex-lab.def
+
+
+Package tagpdf Info: reading namespace definitions tagpdf-ns-pdf.def
+
+
+Package tagpdf Info: reading namespace definitions tagpdf-ns-pdf2.def
+
+\g__tag_struct_AFobj_int=\count289
+\g__tag_para_begin_int=\count290
+\g__tag_para_end_int=\count291
+\g__tag_para_main_begin_int=\count292
+\g__tag_para_main_end_int=\count293
+)
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/latex-lab/latex-lab-tes
+tphase-names.sty
+Package: latex-lab-testphase-names 2025-08-14 v0.8f Code related to the names o
+f tags
+)
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/latex-lab/latex-lab-tes
+tphase-new-or-2.sty
+Package: latex-lab-testphase-new-or-2 2025-05-10 v0.86d Changes to the output r
+outine
+
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/latex-lab/latex-lab-foo
+tnotes.ltx
+File: latex-lab-footnotes.ltx 2025-07-04 v0.8o changes to the footnote interfac
+es
+\footnotemargin=\dimen147
+\g_fnote_id_int=\count294
+))
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/latex-lab/latex-lab-tes
+tphase-block.sty
+Package: latex-lab-testphase-block 2025-07-26 v0.9k blockenv implementation
+
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/latex-lab/latex-lab-ker
+nel-changes.sty
+Package: latex-lab-kernel-changes 2025-07-09 v0.85i General kernel and class ch
+anges
+
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pdftex/glyphtounicode
+.tex)
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/latex-lab/glyphtounicod
+e-cmex.tex))
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/latex-lab/latex-lab-tes
+tphase-context.sty
+Package: latex-lab-testphase-context 2025-10-09 v0.5b Providing context for ins
+tance, etc.
+)
+
+LaTeX template Info: Declaring template type 'blockenv' taking 1 argument(s)
+(template)           on line 96.
+
+
+LaTeX template Info: Declaring template type 'block' taking 1 argument(s) on
+(template)           line 97.
+
+
+LaTeX template Info: Declaring template type 'para' taking 1 argument(s) on
+(template)           line 98.
+
+
+LaTeX template Info: Declaring template type 'list' taking 1 argument(s) on
+(template)           line 99.
+
+
+LaTeX template Info: Declaring template type 'item' taking 1 argument(s) on
+(template)           line 100.
+
+\c@maxblocklevels=\count295
+\l__par_start_skip=\skip49
+\l__block_botsep_skip=\skip50
+\l__block_parbotsep_skip=\skip51
+\l__block_parindent_dim=\dimen148
+\l__block_counter_start_int=\count296
+\l__block_one_label_box=\box57
+\g__block_labels_box=\box58
+\l__block_tmpa_skip=\skip52
+\l__block_topsepadd_skip=\skip53
+\l__block_effective_top_skip=\skip54
+LaTeX Info: Redefining \centering on input line 1476.
+LaTeX Info: Redefining \raggedleft on input line 1477.
+LaTeX Info: Redefining \raggedright on input line 1478.
+)
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/latex-lab/latex-lab-tes
+tphase-sec.sty
+Package: latex-lab-testphase-sec 2025-10-20 v0.84k Code related to the tagging 
+of sectioning commands
+)
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/latex-lab/latex-lab-tes
+tphase-toc.sty
+Package: latex-lab-testphase-toc 2025-07-02 v0.85h  Code related to the tagging
+ of toc-like lists
+\g__tag_toc_level_int=\count297
+)
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/latex-lab/latex-lab-tes
+tphase-minipage.sty
+Package: latex-lab-testphase-minipage 2025-05-10 v0.81g Code related to the tag
+ging of minipages and parboxes
+
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/latex-lab/latex-lab-tes
+tphase-new-or-1.sty
+Package: latex-lab-testphase-new-or-1 2025-05-10 v0.85d Temporary output patche
+s for tagging and better link support -- no longer active
+))
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/latex-lab/latex-lab-tes
+tphase-graphic.sty
+Package: latex-lab-testphase-graphic 2025-09-25 v0.80i Code related to the tagg
+ing of graphics
+\g__tag_graphic_int=\count298
+)
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/latex-lab/latex-lab-tes
+tphase-float.sty
+Package: latex-lab-testphase-float 2025-10-17 v0.81l Code related to the taggin
+g of floats
+\g__tag_float_int=\count299
+)
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/latex-lab/latex-lab-tes
+tphase-bib.sty
+Package: latex-lab-testphase-bib 2025-05-09 v0.81c Code related to the tagging 
+of bibliography and cite command
+)
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/latex-lab/latex-lab-tes
+tphase-text.sty
+Package: latex-lab-testphase-text 2025-05-10 v0.85f Code related to the tagging
+ of various small text commands
+LaTeX Info: Redefining \mbox on input line 84.
+)
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/latex-lab/latex-lab-tes
+tphase-marginpar.sty
+Package: latex-lab-testphase-marginpar 2025-07-23 v0.85h Changes related to the
+ tagging of the margin notes
+\g__kernel_marginpar_int=\count300
+)
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/latex-lab/latex-lab-tes
+tphase-title.sty
+Package: latex-lab-testphase-title 2025-03-08 v0.85d Changes related to the tag
+ging of the title
+)
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/latex-lab/latex-lab-tes
+tphase-table.sty
+Package: latex-lab-testphase-table 2025-08-01 v0.85s Code related to the taggin
+g of tables
+
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/tools/array.sty
+Package: array 2025/09/25 v2.6n Tabular extension package (FMi)
+\col@sep=\dimen149
+\ar@mcellbox=\box59
+\extrarowheight=\dimen150
+\NC@list=\toks17
+\extratabsurround=\skip55
+\backup@length=\skip56
+\ar@cellbox=\box60
+))
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/latex-lab/latex-lab-tes
+tphase-math.sty
+Package: latex-lab-testphase-math 2025-03-10 v0.8d code related to the math tag
+ging
+
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/latex-lab/latex-lab-mat
+h.ltx
+File: latex-lab-math.ltx 2025-10-02 v0.6w Grab all the math(s) and tag it (expe
+riments)
+\l__math_tmpa_skip=\skip57
+\g__math_mathml_total_int=\count301
+\g__math_mathml_int=\count302
+\g__math_math_total_int=\count303
+\g__math_mathml_AF_found_int=\count304
+\g__math_mathml_AF_attached_int=\count305
+\l__math_tmpa_box=\box61
+\l__math_mathstyle_int=\count306
+\g__math_mathchoice_int=\count307
+\l__math_grab_env_int=\count308
+\g__math_postdisplaypenalty_int=\count309
+)
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/latex-lab/latex-lab-mat
+hpkg.ltx
+File: latex-lab-mathpkg.ltx 2025-06-20 v0.1c mathpkg adaptions
+)
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/latex-lab/latex-lab-mat
+hintent.ltx
+File: latex-lab-mathintent.ltx 2025-08-03 v0.1c MathML intent attributes
+))
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/latex-lab/latex-lab-tes
+tphase-firstaid.sty
+Package: latex-lab-testphase-firstaid 2025-11-03 v2025-11-03 Temporary patches 
+to external packages needed for the tagging project
+)
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/latex-lab/latex-lab-tes
+tphase-tikz.sty
+Package: latex-lab-testphase-tikz 2025-09-27 v0.80d Code related to the tagging
+ of tikz pictures
+))
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/pdfmanagement-testphase
+/pdfmanagement-firstaid.sty
+Package: pdfmanagement-firstaid 2025-11-12 v0.96x LaTeX PDF management bundle /
+ firstaid-patches
+
+Package pdfmanagement Info: loading pdfmanagement firstaid code for pgf
+
+)
+Inserting `markspaces' in `pre_linebreak_filter'.
+Inserting `markspaces' in `hpack_filter'.
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/ltx-talk/ltx-talk.cls
+Document Class: ltx-talk 2026-01-16 v0.3.10 A class for typesetting presentatio
+ns
+\l__talk_tmp_box=\box62
+\l__talk_fontsize_dim=\dimen151
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/base/size11.clo
+File: size11.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
+)
+\c__talk_paper_height_dim=\dimen152
+\c__talk_paper_width_dim=\dimen153
+
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks18
+)
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/iftex/iftex.sty
+Package: iftex 2024/12/12 v1.0g TeX engine tests
+))
+\Gm@cnth=\count310
+\Gm@cntv=\count311
+\c@Gm@tempcnt=\count312
+\Gm@bindingoffset=\dimen154
+\Gm@wd@mp=\dimen155
+\Gm@odd@mp=\dimen156
+\Gm@even@mp=\dimen157
+\Gm@layoutwidth=\dimen158
+\Gm@layoutheight=\dimen159
+\Gm@layouthoffset=\dimen160
+\Gm@layoutvoffset=\dimen161
+\Gm@dimlist=\toks19
+
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/geometry/geometry.cfg)) (C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2025/07/09 v2.17z AMS math features
+\@mathmargin=\skip58
+
+For additional information on amsmath, use the `?' option.
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/amsmath/amstext.sty
+Package: amstext 2024/11/17 v2.01 AMS text
+
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks20
+\ex@=\dimen162
+))
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen163
+)
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count313
+LaTeX Info: Redefining \frac on input line 235.
+\uproot@=\count314
+\leftroot@=\count315
+LaTeX Info: Redefining \overline on input line 398.
+LaTeX Info: Redefining \colon on input line 409.
+\classnum@=\count316
+\DOTSCASE@=\count317
+LaTeX Info: Redefining \ldots on input line 495.
+LaTeX Info: Redefining \dots on input line 498.
+LaTeX Info: Redefining \cdots on input line 619.
+\Mathstrutbox@=\box63
+\strutbox@=\box64
+LaTeX Info: Redefining \big on input line 721.
+LaTeX Info: Redefining \Big on input line 722.
+LaTeX Info: Redefining \bigg on input line 723.
+LaTeX Info: Redefining \Bigg on input line 724.
+\big@size=\dimen164
+LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
+\macc@depth=\count318
+LaTeX Info: Redefining \bmod on input line 904.
+LaTeX Info: Redefining \pmod on input line 909.
+LaTeX Info: Redefining \smash on input line 939.
+LaTeX Info: Redefining \relbar on input line 969.
+LaTeX Info: Redefining \Relbar on input line 970.
+\c@MaxMatrixCols=\count319
+\dotsspace@=\muskip17
+\c@parentequation=\count320
+\dspbrk@lvl=\count321
+\tag@help=\toks21
+\row@=\count322
+\column@=\count323
+\maxfields@=\count324
+\andhelp@=\toks22
+\eqnshift@=\dimen165
+\alignsep@=\dimen166
+\tagshift@=\dimen167
+\tagwidth@=\dimen168
+\totwidth@=\dimen169
+\lineht@=\dimen170
+\@envbody=\toks23
+\multlinegap=\skip59
+\multlinetaggap=\skip60
+\mathdisplay@stack=\toks24
+LaTeX Info: Redefining \[ on input line 2950.
+LaTeX Info: Redefining \] on input line 2951.
+)
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/latex-lab/latex-lab-ams
+math.ltx
+File: latex-lab-amsmath.ltx 2025-09-29 v0.1i amsmath adaptions
+LaTeX Info: Redefining \eqref on input line 57.
+)
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/fontspec/fontspec.sty
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/l3packages/xparse/xpars
+e.sty
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/l3kernel/expl3.sty
+Package: expl3 2025-12-29 L3 programming layer (loader) 
+)
+Package: xparse 2025-10-09 L3 Experimental document command parser
+)
+Package: fontspec 2025/09/29 v2.9g Font selection for XeLaTeX and LuaLaTeX
+Lua module: fontspec 2025/09/29 v2.9g Font selection for XeLaTeX and LuaLaTeX
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/fontspec/fontspec-luate
+x.sty
+Package: fontspec-luatex 2025/09/29 v2.9g Font selection for XeLaTeX and LuaLaT
+eX
+\l__fontspec_script_int=\count325
+\l__fontspec_language_int=\count326
+\l__fontspec_strnum_int=\count327
+\l__fontspec_tmp_int=\count328
+\l__fontspec_tmpa_int=\count329
+\l__fontspec_tmpb_int=\count330
+\l__fontspec_tmpc_int=\count331
+\l__fontspec_em_int=\count332
+\l__fontspec_emdef_int=\count333
+\l__fontspec_strong_int=\count334
+\l__fontspec_strongdef_int=\count335
+\l__fontspec_tmpa_dim=\dimen171
+\l__fontspec_tmpb_dim=\dimen172
+\l__fontspec_tmpc_dim=\dimen173
+ (C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/base/fontenc.sty
+Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
+) (C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/fontspec/fontspec.cfg
+)))
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/mathtools/mathtools.sty
+Package: mathtools 2024/10/04 v1.31 mathematical typesetting tools
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/tools/calc.sty
+Package: calc 2025/03/01 v4.3b Infix arithmetic (KKT,FJ)
+\calc@Acount=\count336
+\calc@Bcount=\count337
+\calc@Adimen=\dimen174
+\calc@Bdimen=\dimen175
+\calc@Askip=\skip61
+\calc@Bskip=\skip62
+LaTeX Info: Redefining \setlength on input line 86.
+LaTeX Info: Redefining \addtolength on input line 87.
+\calc@Ccount=\count338
+\calc@Cskip=\skip63
+)
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/mathtools/mhsetup.sty
+Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
+)
+\g_MT_multlinerow_int=\count339
+\l_MT_multwidth_dim=\dimen176
+\origjot=\skip64
+\l_MT_shortvdotswithinadjustabove_dim=\dimen177
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen178
+\l_MT_above_intertext_sep=\dimen179
+\l_MT_below_intertext_sep=\dimen180
+\l_MT_above_shortintertext_sep=\dimen181
+\l_MT_below_shortintertext_sep=\dimen182
+\xmathstrut@box=\box65
+\xmathstrut@dim=\dimen183
+)
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/latex-lab/latex-lab-mat
+htools.ltx
+File: latex-lab-mathtools.ltx 2024-07-13 v0.1a mathtools adaptions
+)
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/lualatex/lua-unicode-math/lua
+-unicode-math.sty
+Package: lua-unicode-math 2026-01-15 v0.6 Opentype Math support for LuaLaTeX
+\g__l_uni_math_font_count_int=\count340
+LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
+(Font)                  OT1/cmr/m/n --> TU/lmr/m/n on input line 162.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> TU/lmr/m/it on input line 162.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> TU/lmr/bx/n on input line 162.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 162.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> TU/lmss/bx/n on input line 162.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 162.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/bx/n on input line 162.
+\symlummain=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `lummain' in version `bold'
+(Font)                  TU/lmm/m/n --> TU/lmm/b/n on input line 169.
+\mathfamattr=\attribute10
+Lua-only attribute leftroot = 11
+Lua-only attribute uproot = 12
+Inserting `lua-unicode-math' in `pre_mlist_to_hlist_filter'.
+Custom whatsit prime = 2
+Lua function prime_helper:w = 32
+Custom whatsit not = 3
+Lua function not = 33
+Custom whatsit dots = 4
+Lua function dots = 34
+Lua function __l_uni_math_set_previous_dots_type:w = 35
+Lua function __l_uni_math_uproot:w = 36
+Lua function __l_uni_math_leftroot:w = 37
+Lua function __l_uni_math_is_integral_cp:wTF = 38
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/unicode-math/unicode-ma
+th-table.tex))
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/newcomputermodern/NewCM
+Sans10-Regular.fontspec)
+
+Package fontspec Info: 
+(fontspec)             Font family 'NewCMSans10-Regular.otf(0)' created for
+(fontspec)             font 'NewCMSans10-Regular.otf' with options
+(fontspec)             [Ligatures=TeX,UprightFont={NewCMSans10-Regular.otf},Upr
+ightFeatures={SizeFeatures={{Size={-8},Font={NewCMSans08-Regular.otf}},{Size={8
+-},Font={NewCMSans10-Regular.otf}}}},ItalicFont={NewCMSans10-Oblique.otf},Itali
+cFeatures={SizeFeatures={{Size={-8},Font={NewCMSans08-Oblique.otf}},{Size={8-},
+Font={NewCMSans10-Oblique.otf}}}},BoldFont={NewCMSans10-Bold.otf},BoldFeatures=
+{SizeFeatures={{Size={0-},Font={NewCMSans10-Bold.otf}}}},BoldItalicFont={NewCMS
+ans10-BoldOblique.otf},BoldItalicFeatures={SizeFeatures={{Size={0-},Font={NewCM
+Sans10-BoldOblique.otf}}}},SlantedFont={NewCMSans10-Regular.otf},SlantedFeature
+s={SizeFeatures={{Size={-8},Font={NewCMSans08-Regular.otf}},{Size={8-},Font={Ne
+wCMSans10-Regular.otf}}}},BoldSlantedFont={NewCMSans10-Bold.otf},BoldSlantedFea
+tures={SizeFeatures={{Size={0-},Font={NewCMSans10-Bold.otf}}}},SwashFont={NewCM
+Sans10-Regular.otf},SwashFeatures={SizeFeatures={{Size={-8},Font={NewCMSans08-R
+egular.otf}},{Size={8-},Font={NewCMSans10-Regular.otf}}}},BoldSwashFont={NewCMS
+ans10-Bold.otf},BoldSwashFeatures={SizeFeatures={{Size={0-},Font={NewCMSans10-B
+old.otf}}}}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <-8>"[NewCMSans08-Regular.otf]:mode=node;script=latn;lan
+guage=dflt;+tlig;"<8->"[NewCMSans10-Regular.otf]:mode=node;script=latn;language
+=dflt;+tlig;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
+(fontspec)             <-8>"[NewCMSans08-Regular.otf]:mode=node;script=latn;lan
+guage=dflt;+tlig;+smcp;"<8->"[NewCMSans10-Regular.otf]:mode=node;script=latn;la
+nguage=dflt;+tlig;+smcp;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <0->"[NewCMSans10-Bold.otf]:mode=node;script=latn;langua
+ge=dflt;+tlig;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.:
+(fontspec)             <0->"[NewCMSans10-Bold.otf]:mode=node;script=latn;langua
+ge=dflt;+tlig;+smcp;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <-8>"[NewCMSans08-Oblique.otf]:mode=node;script=latn;lan
+guage=dflt;+tlig;"<8->"[NewCMSans10-Oblique.otf]:mode=node;script=latn;language
+=dflt;+tlig;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
+(fontspec)             <-8>"[NewCMSans08-Oblique.otf]:mode=node;script=latn;lan
+guage=dflt;+tlig;+smcp;"<8->"[NewCMSans10-Oblique.otf]:mode=node;script=latn;la
+nguage=dflt;+tlig;+smcp;"
+(fontspec)             - 'slanted' (m/sl) with NFSS spec.:
+(fontspec)             <-8>"[NewCMSans08-Regular.otf]:mode=node;script=latn;lan
+guage=dflt;+tlig;"<8->"[NewCMSans10-Regular.otf]:mode=node;script=latn;language
+=dflt;+tlig;"
+(fontspec)             - 'slanted small caps'  (m/scsl) with NFSS spec.:
+(fontspec)             <-8>"[NewCMSans08-Regular.otf]:mode=node;script=latn;lan
+guage=dflt;+tlig;+smcp;"<8->"[NewCMSans10-Regular.otf]:mode=node;script=latn;la
+nguage=dflt;+tlig;+smcp;"
+(fontspec)             - 'swash' (m/sw) with NFSS spec.:
+(fontspec)             <-8>"[NewCMSans08-Regular.otf]:mode=node;script=latn;lan
+guage=dflt;+tlig;"<8->"[NewCMSans10-Regular.otf]:mode=node;script=latn;language
+=dflt;+tlig;"
+(fontspec)             -  (m/scsw) with NFSS spec.:
+(fontspec)             <-8>"[NewCMSans08-Regular.otf]:mode=node;script=latn;lan
+guage=dflt;+tlig;+smcp;"<8->"[NewCMSans10-Regular.otf]:mode=node;script=latn;la
+nguage=dflt;+tlig;+smcp;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <0->"[NewCMSans10-BoldOblique.otf]:mode=node;script=latn
+;language=dflt;+tlig;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
+(fontspec)             <0->"[NewCMSans10-BoldOblique.otf]:mode=node;script=latn
+;language=dflt;+tlig;+smcp;"
+(fontspec)             - 'bold slanted' (b/sl) with NFSS spec.:
+(fontspec)             <0->"[NewCMSans10-Bold.otf]:mode=node;script=latn;langua
+ge=dflt;+tlig;"
+(fontspec)             - 'bold slanted small caps'  (b/scsl) with NFSS spec.:
+(fontspec)             <0->"[NewCMSans10-Bold.otf]:mode=node;script=latn;langua
+ge=dflt;+tlig;+smcp;"
+(fontspec)             - 'bold swash' (b/sw) with NFSS spec.:
+(fontspec)             <0->"[NewCMSans10-Bold.otf]:mode=node;script=latn;langua
+ge=dflt;+tlig;"
+(fontspec)             -  (b/scsw) with NFSS spec.:
+(fontspec)             <0->"[NewCMSans10-Bold.otf]:mode=node;script=latn;langua
+ge=dflt;+tlig;+smcp;"
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'NewCMSans10-Regular.otf(1)' created for
+(fontspec)             font 'NewCMSans10-Regular.otf' with options
+(fontspec)             [UprightFont={NewCMSans10-Regular.otf},UprightFeatures={
+SizeFeatures={{Size={-8},Font={NewCMSans08-Regular.otf}},{Size={8-},Font={NewCM
+Sans10-Regular.otf}}}},ItalicFont={NewCMSans10-Oblique.otf},ItalicFeatures={Siz
+eFeatures={{Size={-8},Font={NewCMSans08-Oblique.otf}},{Size={8-},Font={NewCMSan
+s10-Oblique.otf}}}},BoldFont={NewCMSans10-Bold.otf},BoldFeatures={SizeFeatures=
+{{Size={0-},Font={NewCMSans10-Bold.otf}}}},BoldItalicFont={NewCMSans10-BoldObli
+que.otf},BoldItalicFeatures={SizeFeatures={{Size={0-},Font={NewCMSans10-BoldObl
+ique.otf}}}},SlantedFont={NewCMSans10-Regular.otf},SlantedFeatures={SizeFeature
+s={{Size={-8},Font={NewCMSans08-Regular.otf}},{Size={8-},Font={NewCMSans10-Regu
+lar.otf}}}},BoldSlantedFont={NewCMSans10-Bold.otf},BoldSlantedFeatures={SizeFea
+tures={{Size={0-},Font={NewCMSans10-Bold.otf}}}},SwashFont={NewCMSans10-Regular
+.otf},SwashFeatures={SizeFeatures={{Size={-8},Font={NewCMSans08-Regular.otf}},{
+Size={8-},Font={NewCMSans10-Regular.otf}}}},BoldSwashFont={NewCMSans10-Bold.otf
+},BoldSwashFeatures={SizeFeatures={{Size={0-},Font={NewCMSans10-Bold.otf}}}},Re
+nderer=Basic].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <-8>"[NewCMSans08-Regular.otf]:mode=base;script=latn;lan
+guage=dflt;"<8->"[NewCMSans10-Regular.otf]:mode=base;script=latn;language=dflt;
+"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
+(fontspec)             <-8>"[NewCMSans08-Regular.otf]:mode=base;script=latn;lan
+guage=dflt;+smcp;"<8->"[NewCMSans10-Regular.otf]:mode=base;script=latn;language
+=dflt;+smcp;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <0->"[NewCMSans10-Bold.otf]:mode=base;script=latn;langua
+ge=dflt;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.:
+(fontspec)             <0->"[NewCMSans10-Bold.otf]:mode=base;script=latn;langua
+ge=dflt;+smcp;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <-8>"[NewCMSans08-Oblique.otf]:mode=base;script=latn;lan
+guage=dflt;"<8->"[NewCMSans10-Oblique.otf]:mode=base;script=latn;language=dflt;
+"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
+(fontspec)             <-8>"[NewCMSans08-Oblique.otf]:mode=base;script=latn;lan
+guage=dflt;+smcp;"<8->"[NewCMSans10-Oblique.otf]:mode=base;script=latn;language
+=dflt;+smcp;"
+(fontspec)             - 'slanted' (m/sl) with NFSS spec.:
+(fontspec)             <-8>"[NewCMSans08-Regular.otf]:mode=base;script=latn;lan
+guage=dflt;"<8->"[NewCMSans10-Regular.otf]:mode=base;script=latn;language=dflt;
+"
+(fontspec)             - 'slanted small caps'  (m/scsl) with NFSS spec.:
+(fontspec)             <-8>"[NewCMSans08-Regular.otf]:mode=base;script=latn;lan
+guage=dflt;+smcp;"<8->"[NewCMSans10-Regular.otf]:mode=base;script=latn;language
+=dflt;+smcp;"
+(fontspec)             - 'swash' (m/sw) with NFSS spec.:
+(fontspec)             <-8>"[NewCMSans08-Regular.otf]:mode=base;script=latn;lan
+guage=dflt;"<8->"[NewCMSans10-Regular.otf]:mode=base;script=latn;language=dflt;
+"
+(fontspec)             -  (m/scsw) with NFSS spec.:
+(fontspec)             <-8>"[NewCMSans08-Regular.otf]:mode=base;script=latn;lan
+guage=dflt;+smcp;"<8->"[NewCMSans10-Regular.otf]:mode=base;script=latn;language
+=dflt;+smcp;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <0->"[NewCMSans10-BoldOblique.otf]:mode=base;script=latn
+;language=dflt;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
+(fontspec)             <0->"[NewCMSans10-BoldOblique.otf]:mode=base;script=latn
+;language=dflt;+smcp;"
+(fontspec)             - 'bold slanted' (b/sl) with NFSS spec.:
+(fontspec)             <0->"[NewCMSans10-Bold.otf]:mode=base;script=latn;langua
+ge=dflt;"
+(fontspec)             - 'bold slanted small caps'  (b/scsl) with NFSS spec.:
+(fontspec)             <0->"[NewCMSans10-Bold.otf]:mode=base;script=latn;langua
+ge=dflt;+smcp;"
+(fontspec)             - 'bold swash' (b/sw) with NFSS spec.:
+(fontspec)             <0->"[NewCMSans10-Bold.otf]:mode=base;script=latn;langua
+ge=dflt;"
+(fontspec)             -  (b/scsw) with NFSS spec.:
+(fontspec)             <0->"[NewCMSans10-Bold.otf]:mode=base;script=latn;langua
+ge=dflt;+smcp;"
+
+LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
+(Font)                  TU/lmr/m/n --> TU/NewCMSans10-Regular.otf(1)/m/n on inp
+ut line 212.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  TU/lmr/m/it --> TU/NewCMSans10-Regular.otf(1)/m/it on i
+nput line 212.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  TU/lmr/bx/n --> TU/NewCMSans10-Regular.otf(1)/b/n on in
+put line 212.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  TU/lmss/m/n --> TU/NewCMSans10-Regular.otf(1)/m/n on in
+put line 212.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  TU/lmss/bx/n --> TU/NewCMSans10-Regular.otf(1)/b/n on i
+nput line 212.
+
+Package fontspec Info: 
+(fontspec)             Font family 'NewCMSansMath-Regular.otf(0)' created for
+(fontspec)             font 'NewCMSansMath-Regular.otf' with options
+(fontspec)             [Script=Math,Renderer=Base].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"[NewCMSansMath-Regular.otf]:mode=base;script=math;la
+nguage=dflt;"
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'NewCMSansMath-Regular.otf(1)' created for
+(fontspec)             font 'NewCMSansMath-Regular.otf' with options
+(fontspec)             [Script=Math,Renderer=Base,Style=MathScript].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"[NewCMSansMath-Regular.otf]:mode=base;script=math;la
+nguage=dflt;+ssty=0;"
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'NewCMSansMath-Regular.otf(2)' created for
+(fontspec)             font 'NewCMSansMath-Regular.otf' with options
+(fontspec)             [Script=Math,Renderer=Base,Style=MathScriptScript].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"[NewCMSansMath-Regular.otf]:mode=base;script=math;la
+nguage=dflt;+ssty=1;"
+
+LaTeX Font Info:    Redeclaring symbol font `lummain' on input line 213.
+LaTeX Font Info:    Overwriting symbol font `lummain' in version `normal'
+(Font)                  TU/lmm/m/n --> TU/NewCMSansMath-Regular.otf(0)/m/n on i
+nput line 213.
+LaTeX Font Info:    Overwriting symbol font `lummain' in version `bold'
+(Font)                  TU/lmm/b/n --> TU/NewCMSansMath-Regular.otf(0)/m/n on i
+nput line 213.
+LaTeX Font Info:    Overwriting symbol font `lummain' in version `bold'
+(Font)                  TU/NewCMSansMath-Regular.otf(0)/m/n --> TU/NewCMSansMat
+h-Regular.otf(0)/b/n on input line 213.
+
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2025-07-12 v7.01o Hypertext links for LaTeX
+
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+)
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/kvdefinekeys/kvdefine
+keys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pdfescape/pdfescape.s
+ty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+)
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pdftexcmds/pdftexcmds
+.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/infwarerr/infwarerr.s
+ty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+\pdftexcmds@toks=\toks25
+))
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/hyperref/nameref.sty
+Package: nameref 2025-06-21 v2.57 Cross-referencing by name of section
+
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/gettitlestring/gettit
+lestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+))
+\c@section@level=\count341
+)
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count342
+)
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/stringenc/stringenc.s
+ty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
+)
+)
+\@linkdim=\dimen184
+\Hy@linkcounter=\count343
+\Hy@pagecounter=\count344
+ (C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2025-07-12 v7.01o Hyperref: PDFDocEncoding definition (HO)
+) (C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+\Hy@SavedSpaceFactor=\count345
+ (C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/hyperref/puenc.def
+File: puenc.def 2025-07-12 v7.01o Hyperref: PDF Unicode definition (HO)
+)
+Package hyperref Info: Hyper figures OFF on input line 4195.
+Package hyperref Info: Link nesting OFF on input line 4200.
+Package hyperref Info: Hyper index ON on input line 4203.
+Package hyperref Info: Plain pages OFF on input line 4210.
+Package hyperref Info: Backreferencing OFF on input line 4215.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4462.
+\c@Hy@tempcnt=\count346
+
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty
+\Urlmuskip=\muskip18
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4801.
+\XeTeXLinkMargin=\dimen185
+
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/bigintcalc/bigintcalc
+.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count347
+\Field@Width=\dimen186
+\Fld@charsize=\dimen187
+Package hyperref Info: Hyper figures OFF on input line 6078.
+Package hyperref Info: Link nesting OFF on input line 6083.
+Package hyperref Info: Hyper index ON on input line 6086.
+Package hyperref Info: backreferencing OFF on input line 6093.
+Package hyperref Info: Link coloring OFF on input line 6098.
+Package hyperref Info: Link coloring with OCG OFF on input line 6103.
+Package hyperref Info: PDF/A mode ON on input line 6106.
+\Hy@abspage=\count348
+\c@Item=\count349
+)
+Package hyperref Info: Driver (custom): hgeneric-testphase.
+
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/pdfmanagement-testphase
+/hgeneric-testphase.def
+File: hgeneric-testphase.def 2025-11-12 v0.96x generic Hyperref driver for the 
+LaTeX PDF management bundle
+
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/pdfmanagement-testphase
+/hyperref-colorschemes.def)
+LaTeX Info: Redefining \href on input line 262.
+LaTeX Info: Redefining \url on input line 348.
+\l__hyp_tmpa_box=\box66
+\l__hyp_tmpa_int=\count350
+\l__hyp_dest_box=\box67
+\g__hyp_linknestlevel_int=\count351
+\HyAnn@Count=\count352
+\Fld@listcount=\count353
+\Hy@SectionHShift=\skip65
+)
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
+
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: luatex.def on input line 274.
+
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/graphics-def/luatex.def
+File: luatex.def 2025/09/29 v1.2f Graphics/color driver for luatex
+)
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
+Package xcolor Info: Model `RGB' extended on input line 1365.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
+)
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/pdfmanagement-testphase
+/xcolor-patches-tmp-ltx.sty
+Package: xcolor-patches-tmp-ltx 2025-11-12 v0.96x patch xcolor for l3color
+)
+\g__talk_pauses_int=\count354
+\l__talk_slide_box=\box68
+\g__talk_slide_int=\count355
+\g__talk_frame_struct_int=\count356
+\g__talk_saved_equation_int=\count357
+\g__talk_saved_footnote_int=\count358
+\g__talk_saved_mpfootnote_int=\count359
+\g__talk_saved_parentequation_int=\count360
+
+LaTeX template Info: Declaring template type 'footer-element' taking 1
+(template)           argument(s) on line 698.
+
+\l__talk_footelem_left_skip=\dimen188
+\l__talk_footelem_right_skip=\dimen189
+
+LaTeX template Info: Declaring template type 'header' taking 0 argument(s) on
+(template)           line 733.
+
+\l__talk_header_ht_dim=\dimen190
+\l__talk_header_left_skip=\skip66
+\l__talk_header_right_skip=\skip67
+
+LaTeX template Info: Declaring template type 'footer' taking 0 argument(s) on
+(template)           line 780.
+
+\l__talk_footer_left_skip=\dimen191
+\l__talk_footer_right_skip=\dimen192
+\g__talk_frame_int=\count361
+
+LaTeX template Info: Declaring template type 'floatenv' taking 2 argument(s)
+(template)           on line 1066.
+
+\c@figure=\count362
+\g__talk_saved_figure_int=\count363
+\c@table=\count364
+\g__talk_saved_table_int=\count365
+\abovecaptionskip=\skip68
+\belowcaptionskip=\skip69
+
+LaTeX template Info: Declaring template type 'hidden' taking 0 argument(s) on
+(template)           line 1211.
+
+\l__talk_overprint_int=\count366
+
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/graphics/graphicx.sty
+Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
+
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/graphics/graphics.sty
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/graphics/trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+)
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/graphics-cfg/graphics.c
+fg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: luatex.def on input line 106.
+)
+\Gin@req@height=\dimen193
+\Gin@req@width=\dimen194
+)
+
+LaTeX template Info: Declaring template type 'frametitle' taking 1 argument(s)
+(template)           on line 1609.
+
+\l__talk_frametitle_after_skip=\skip70
+\l__talk_frametitle_before_skip=\skip71
+\c@section=\count367
+\g__talk_saved_section_int=\count368
+\c@subsection=\count369
+\g__talk_saved_subsection_int=\count370
+\c@subsubsection=\count371
+\g__talk_saved_subsubsection_int=\count372
+
+LaTeX template Info: Declaring template type 'titlepage-element' taking 1
+(template)           argument(s) on line 2043.
+
+\l__talk_titlelem_after_skip=\dimen195
+\l__talk_titlelem_before_skip=\dimen196
+
+LaTeX template Info: Declaring template type 'titlepage' taking 0 argument(s)
+(template)           on line 2093.
+
+) (./SlidesPreambleADA.tex
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/babel/babel.sty
+Package: babel 2025/12/30 v25.18 The multilingual framework for LuaLaTeX, pdfLa
+TeX and XeLaTeX
+
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/babel/luababel.def
+\bbl@readstream=\read2
+\l@afrikaans=\language2
+Package babel Info: Non-standard hyphenation setup on input line 118.
+\l@ancientgreek=\language3
+\l@armenian=\language4
+\l@assamese=\language5
+\l@basque=\language6
+\l@belarusian=\language7
+\l@bengali=\language8
+\l@bokmal=\language9
+\l@bulgarian=\language10
+\l@catalan=\language11
+\l@churchslavonic=\language12
+\l@classiclatin=\language13
+\l@coptic=\language14
+\l@croatian=\language15
+\l@czech=\language16
+\l@danish=\language17
+\l@dutch=\language18
+\l@esperanto=\language19
+\l@estonian=\language20
+\l@ethiopic=\language21
+\l@finnish=\language22
+\l@french=\language23
+\l@friulan=\language24
+\l@galician=\language25
+\l@georgian=\language26
+\l@german=\language27
+\l@greek=\language28
+\l@gujarati=\language29
+\l@hindi=\language30
+\l@hungarian=\language31
+\l@icelandic=\language32
+\l@indonesian=\language33
+\l@interlingua=\language34
+\l@irish=\language35
+\l@italian=\language36
+\l@kannada=\language37
+\l@kurmanji=\language38
+\l@latin=\language39
+\l@latvian=\language40
+\l@lithuanian=\language41
+\l@liturgicallatin=\language42
+\l@macedonian=\language43
+\l@malayalam=\language44
+\l@marathi=\language45
+\l@mongolian=\language46
+\l@mongolianlmc=\language47
+\l@monogreek=\language48
+\l@ngerman=\language49
+\l@nynorsk=\language50
+\l@occitan=\language51
+\l@oriya=\language52
+\l@pali=\language53
+\l@panjabi=\language54
+\l@piedmontese=\language55
+\l@polish=\language56
+\l@portuguese=\language57
+\l@romanian=\language58
+\l@romansh=\language59
+\l@russian=\language60
+\l@sanskrit=\language61
+\l@serbian=\language62
+\l@serbianc=\language63
+\l@slovak=\language64
+\l@slovenian=\language65
+\l@spanish=\language66
+\l@swedish=\language67
+\l@swissgerman=\language68
+\l@tamil=\language69
+\l@telugu=\language70
+\l@thai=\language71
+\l@turkish=\language72
+\l@turkmen=\language73
+\l@ukenglish=\language74
+\l@ukrainian=\language75
+\l@uppersorbian=\language76
+\l@usenglishmax=\language77
+\l@welsh=\language78
+\babelcatcodetablenum=\catcodetable14
+\bbl@pattcodes=\catcodetable15
+)
+\babel@savecnt=\count373
+LaTeX Encoding Info:    Redeclaring text command \ij (encoding OT1) on input li
+ne 2068.
+LaTeX Encoding Info:    Redeclaring text command \IJ (encoding OT1) on input li
+ne 2070.
+LaTeX Encoding Info:    Redeclaring text command \ij (encoding T1) on input lin
+e 2072.
+LaTeX Encoding Info:    Redeclaring text command \IJ (encoding T1) on input lin
+e 2073.
+LaTeX Encoding Info:    Ignoring declaration for text command \ij (encoding ?) 
+on input line 2074.
+LaTeX Encoding Info:    Ignoring declaration for text command \IJ (encoding ?) 
+on input line 2076.
+LaTeX Encoding Info:    Ignoring declaration for text command \SS (encoding ?) 
+on input line 2101.
+\U@D=\dimen197
+\l@unhyphenated=\language79
+
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/babel/luababel.def
+\bbl@attr@locale=\attribute13
+)
+Package babel Info: Fetching locale name for tag en-US
+(babel)             from babel-en-US.ini. Reported on input line 4175.
+Package babel Info: Passing american to babel.
+(babel)             This will be the main language except if
+(babel)             explictly overriden with 'main='.
+(babel)             Reported on input line 4183.
+Package babel Info: Configuration files are deprecated, as
+(babel)             they can break document portability.
+(babel)             Reported on input line 4197.
+
+*************************************
+* Local config file bblopts.cfg used
+*
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/arabi/bblopts.cfg
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
+ babel
+)
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/babel/locale/en/babel
+-american.tex)
+Package babel Info: Importing font and identification data for american
+(babel)             from babel-en-US.ini. Reported on input line 4321.
+
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/babel-english/american.
+ldf
+Language: american 2017/06/06 v3.3r English support from the babel system
+
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/babel-english/english.l
+df
+Language: english 2017/06/06 v3.3r English support from the babel system
+Package babel Info: Hyphen rules for 'canadian' set to \l@english
+(babel)             (\language0). Reported on input line 102.
+Package babel Info: Hyphen rules for 'australian' set to \l@ukenglish
+(babel)             (\language74). Reported on input line 105.
+Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
+(babel)             (\language74). Reported on input line 108.
+)))
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2025/02/06 v3.11 Customized lists
+\labelindent=\skip72
+\enit@outerparindent=\dimen198
+\enit@toks=\toks26
+\enit@inbox=\box69
+\enit@count@id=\count374
+\enitdp@description=\count375
+)
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen199
+\lightrulewidth=\dimen256
+\cmidrulewidth=\dimen257
+\belowrulesep=\dimen258
+\belowbottomsep=\dimen259
+\aboverulesep=\dimen260
+\abovetopsep=\dimen261
+\cmidrulesep=\dimen262
+\cmidrulekern=\dimen263
+\defaultaddspace=\dimen264
+\@cmidla=\count376
+\@cmidlb=\count377
+\@aboverulesep=\dimen265
+\@belowrulesep=\dimen266
+\@thisruleclass=\count378
+\@lastruleclass=\count379
+\@thisrulewidth=\dimen267
+)
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/tools/tabularx.sty
+Package: tabularx 2023/12/11 v2.12a `tabularx' package (DPC)
+\TX@col@width=\dimen268
+\TX@old@table=\dimen269
+\TX@old@col=\dimen270
+\TX@target=\dimen271
+\TX@delta=\dimen272
+\TX@cols=\count380
+\TX@ftn=\toks27
+)
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/fancyvrb/fancyvrb.sty
+Package: fancyvrb 2025/07/28 4.6 verbatim text (tvz,hv)
+\FV@CodeLineNo=\count381
+\FV@InFile=\read3
+\FV@TabBox=\box70
+\c@FancyVerbLine=\count382
+\g__talk_saved_FancyVerbLine_int=\count383
+\FV@StepNumber=\count384
+\FV@OutFile=\write3
+)
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/pgf/frontendlayer/tikz.
+sty
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/pgf/basiclayer/pgf.sty
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/pgf/utilities/pgfrcs.st
+y
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgf/utilities/pgfutil
+-common.tex
+\pgfutil@everybye=\toks28
+\pgfutil@tempdima=\dimen273
+\pgfutil@tempdimb=\dimen274
+)
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgf/utilities/pgfutil
+-latex.def
+\pgfutil@abb=\box71
+)
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgf/utilities/pgfrcs.
+code.tex
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgf/pgf.revision.tex)
+Package: pgfrcs 2025-08-29 v3.1.11a (3.1.11a)
+))
+Package: pgf 2025-08-29 v3.1.11a (3.1.11a)
+
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/pgf/basiclayer/pgfcore.
+sty
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/pgf/systemlayer/pgfsys.
+sty
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgf/systemlayer/pgfsy
+s.code.tex
+Package: pgfsys 2025-08-29 v3.1.11a (3.1.11a)
+
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgf/utilities/pgfkeys
+.code.tex
+\pgfkeys@pathtoks=\toks29
+\pgfkeys@temptoks=\toks30
+
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgf/utilities/pgfkeys
+libraryfiltered.code.tex
+\pgfkeys@tmptoks=\toks31
+))
+\pgf@x=\dimen275
+\pgf@y=\dimen276
+\pgf@xa=\dimen277
+\pgf@ya=\dimen278
+\pgf@xb=\dimen279
+\pgf@yb=\dimen280
+\pgf@xc=\dimen281
+\pgf@yc=\dimen282
+\pgf@xd=\dimen283
+\pgf@yd=\dimen284
+\w@pgf@writea=\write4
+\r@pgf@reada=\read4
+\c@pgf@counta=\count385
+\c@pgf@countb=\count386
+\c@pgf@countc=\count387
+\c@pgf@countd=\count388
+\t@pgf@toka=\toks32
+\t@pgf@tokb=\toks33
+\t@pgf@tokc=\toks34
+\pgf@sys@id@count=\count389
+
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgf/systemlayer/pgf.c
+fg
+File: pgf.cfg 2025-08-29 v3.1.11a (3.1.11a)
+)
+Driver file for pgf: pgfsys-luatex.def
+
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgf/systemlayer/pgfsy
+s-luatex.def
+File: pgfsys-luatex.def 2025-08-29 v3.1.11a (3.1.11a)
+
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgf/systemlayer/pgfsy
+s-common-pdf.def
+File: pgfsys-common-pdf.def 2025-08-29 v3.1.11a (3.1.11a)
+)))
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgf/systemlayer/pgfsy
+ssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfsyssoftpath@smallbuffer@items=\count390
+\pgfsyssoftpath@bigbuffer@items=\count391
+)
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgf/systemlayer/pgfsy
+sprotocol.code.tex
+File: pgfsysprotocol.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+))
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfcor
+e.code.tex
+Package: pgfcore 2025-08-29 v3.1.11a (3.1.11a)
+
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmath.code
+.tex
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathutil.
+code.tex)
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathparse
+r.code.tex
+\pgfmath@dimen=\dimen285
+\pgfmath@count=\count392
+\pgfmath@box=\box72
+\pgfmath@toks=\toks35
+\pgfmath@stack@operand=\toks36
+\pgfmath@stack@operation=\toks37
+)
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfunct
+ions.code.tex)
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfunct
+ions.basic.code.tex)
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfunct
+ions.trigonometric.code.tex)
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfunct
+ions.random.code.tex)
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfunct
+ions.comparison.code.tex)
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfunct
+ions.base.code.tex)
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfunct
+ions.round.code.tex)
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfunct
+ions.misc.code.tex)
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfunct
+ions.integerarithmetics.code.tex)
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathcalc.
+code.tex)
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfloat
+.code.tex
+\c@pgfmathroundto@lastzeros=\count393
+))
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfint.code.
+tex)
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfcor
+epoints.code.tex
+File: pgfcorepoints.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@picminx=\dimen286
+\pgf@picmaxx=\dimen287
+\pgf@picminy=\dimen288
+\pgf@picmaxy=\dimen289
+\pgf@pathminx=\dimen290
+\pgf@pathmaxx=\dimen291
+\pgf@pathminy=\dimen292
+\pgf@pathmaxy=\dimen293
+\pgf@xx=\dimen294
+\pgf@xy=\dimen295
+\pgf@yx=\dimen296
+\pgf@yy=\dimen297
+\pgf@zx=\dimen298
+\pgf@zy=\dimen299
+)
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfcor
+epathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@path@lastx=\dimen300
+\pgf@path@lasty=\dimen301
+)
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfcor
+epathusage.code.tex
+File: pgfcorepathusage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@shorten@end@additional=\dimen302
+\pgf@shorten@start@additional=\dimen303
+)
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfcor
+escopes.code.tex
+File: pgfcorescopes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfpic=\box73
+\pgf@hbox=\box74
+\pgf@layerbox@main=\box75
+\pgf@picture@serial@count=\count394
+)
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfcor
+egraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgflinewidth=\dimen304
+)
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfcor
+etransformations.code.tex
+File: pgfcoretransformations.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@pt@x=\dimen305
+\pgf@pt@y=\dimen306
+\pgf@pt@temp=\dimen307
+)
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfcor
+equick.code.tex
+File: pgfcorequick.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfcor
+eobjects.code.tex
+File: pgfcoreobjects.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfcor
+epathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfcor
+earrows.code.tex
+File: pgfcorearrows.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfarrowsep=\dimen308
+)
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfcor
+eshade.code.tex
+File: pgfcoreshade.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@max=\dimen309
+\pgf@sys@shading@range@num=\count395
+\pgf@shadingcount=\count396
+)
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfcor
+eimage.code.tex
+File: pgfcoreimage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfcor
+eexternal.code.tex
+File: pgfcoreexternal.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfexternal@startupbox=\box76
+)
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfcor
+elayers.code.tex
+File: pgfcorelayers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfcor
+etransparency.code.tex
+File: pgfcoretransparency.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfcor
+epatterns.code.tex
+File: pgfcorepatterns.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfcor
+erdf.code.tex
+File: pgfcorerdf.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)))
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgf/modules/pgfmodule
+shapes.code.tex
+File: pgfmoduleshapes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfnodeparttextbox=\box77
+)
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgf/modules/pgfmodule
+plot.code.tex
+File: pgfmoduleplot.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/pgf/compatibility/pgfco
+mp-version-0-65.sty
+Package: pgfcomp-version-0-65 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@nodesepstart=\dimen310
+\pgf@nodesepend=\dimen311
+)
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/pgf/compatibility/pgfco
+mp-version-1-18.sty
+Package: pgfcomp-version-1-18 2025-08-29 v3.1.11a (3.1.11a)
+))
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/pgf/utilities/pgffor.st
+y
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/pgf/utilities/pgfkeys.s
+ty
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgf/utilities/pgfkeys
+.code.tex))
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/pgf/math/pgfmath.sty
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmath.code
+.tex))
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgf/utilities/pgffor.
+code.tex
+Package: pgffor 2025-08-29 v3.1.11a (3.1.11a)
+\pgffor@iter=\dimen312
+\pgffor@skip=\dimen313
+\pgffor@stack=\toks38
+\pgffor@toks=\toks39
+))
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgf/frontendlayer/tik
+z/tikz.code.tex
+Package: tikz 2025-08-29 v3.1.11a (3.1.11a)
+
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgf/libraries/pgflibr
+aryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@plot@mark@count=\count397
+\pgfplotmarksize=\dimen314
+)
+\tikz@lastx=\dimen315
+\tikz@lasty=\dimen316
+\tikz@lastxsaved=\dimen317
+\tikz@lastysaved=\dimen318
+\tikz@lastmovetox=\dimen319
+\tikz@lastmovetoy=\dimen320
+\tikzleveldistance=\dimen321
+\tikzsiblingdistance=\dimen322
+\tikz@figbox=\box78
+\tikz@figbox@bg=\box79
+\tikz@tempbox=\box80
+\tikz@tempbox@bg=\box81
+\tikztreelevel=\count398
+\tikznumberofchildren=\count399
+\tikznumberofcurrentchild=\count400
+\tikz@fig@count=\count401
+
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgf/modules/pgfmodule
+matrix.code.tex
+File: pgfmodulematrix.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfmatrixcurrentrow=\count402
+\pgfmatrixcurrentcolumn=\count403
+\pgf@matrix@numberofcolumns=\count404
+)
+\tikz@expandcount=\count405
+
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgf/frontendlayer/tik
+z/libraries/tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)))
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgf/frontendlayer/tik
+z/libraries/tikzlibrarycalc.code.tex
+File: tikzlibrarycalc.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgf/frontendlayer/tik
+z/libraries/tikzlibraryshapes.code.tex
+File: tikzlibraryshapes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgf/frontendlayer/tik
+z/libraries/tikzlibraryshapes.geometric.code.tex
+File: tikzlibraryshapes.geometric.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgf/libraries/shapes/
+pgflibraryshapes.geometric.code.tex
+File: pgflibraryshapes.geometric.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+))
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgf/frontendlayer/tik
+z/libraries/tikzlibraryshapes.misc.code.tex
+File: tikzlibraryshapes.misc.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgf/libraries/shapes/
+pgflibraryshapes.misc.code.tex
+File: pgflibraryshapes.misc.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+))
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgf/frontendlayer/tik
+z/libraries/tikzlibraryshapes.symbols.code.tex
+File: tikzlibraryshapes.symbols.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgf/libraries/shapes/
+pgflibraryshapes.symbols.code.tex
+File: pgflibraryshapes.symbols.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+))
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgf/frontendlayer/tik
+z/libraries/tikzlibraryshapes.arrows.code.tex
+File: tikzlibraryshapes.arrows.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgf/libraries/shapes/
+pgflibraryshapes.arrows.code.tex
+File: pgflibraryshapes.arrows.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+))
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgf/frontendlayer/tik
+z/libraries/tikzlibraryshapes.callouts.code.tex
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgf/libraries/shapes/
+pgflibraryshapes.callouts.code.tex))
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgf/frontendlayer/tik
+z/libraries/tikzlibraryshapes.multipart.code.tex
+File: tikzlibraryshapes.multipart.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgf/libraries/shapes/
+pgflibraryshapes.multipart.code.tex
+File: pgflibraryshapes.multipart.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfnodepartlowerbox=\box82
+\pgfnodeparttwobox=\box83
+\pgfnodepartthreebox=\box84
+\pgfnodepartfourbox=\box85
+\pgfnodeparttwentybox=\box86
+\pgfnodepartnineteenbox=\box87
+\pgfnodeparteighteenbox=\box88
+\pgfnodepartseventeenbox=\box89
+\pgfnodepartsixteenbox=\box90
+\pgfnodepartfifteenbox=\box91
+\pgfnodepartfourteenbox=\box92
+\pgfnodepartthirteenbox=\box93
+\pgfnodeparttwelvebox=\box94
+\pgfnodepartelevenbox=\box95
+\pgfnodeparttenbox=\box96
+\pgfnodepartninebox=\box97
+\pgfnodeparteightbox=\box98
+\pgfnodepartsevenbox=\box99
+\pgfnodepartsixbox=\box100
+\pgfnodepartfivebox=\box101
+)))
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgf/frontendlayer/tik
+z/libraries/tikzlibrarybackgrounds.code.tex
+File: tikzlibrarybackgrounds.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@layerbox@background=\box102
+\pgf@layerboxsaved@background=\box103
+)
+
+LaTeX template Info: Declaring instance 'std' of type header on line 40.
+
+
+LaTeX template Info: Declaring instance 'header' of type frametitle on line
+(template)           45.
+
+)
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/lualatex/luamml/luamml.sty
+Package: luamml 2025-10-20 v0.7.0 Automatically generate presentational MathML 
+from LuaTeX math expressions
+\l__luamml_flag_int=\count406
+\l__luamml_pretty_int=\count407
+\tracingmathml=\count408
+Lua function RegisterFamilyMapping = 40
+Lua function RegisterTextFamily = 41
+Inserting `dump_list' in `pre_mlist_to_hlist_filter'.
+Lua function luamml_get_last_mathml_stream:e = 42
+Lua function luamml_begin_single_file: = 43
+Lua function luamml_end_single_file: = 44
+Lua function __luamml_register_output_hook:N = 45
+Lua function __luamml_disable_output_hook: = 46
+Lua function __luamml_annotate_begin: = 47
+Lua function __luamml_annotate_end:we = 48
+Lua function __luamml_annotate_end:e = 49
+Lua function __luamml_annotate_attribute_end:e = 50
+Inserting `mathml amsmath processing' in `hpack_filter'.
+Lua function __luamml_array_init_col: = 51
+Lua function __luamml_array_finalize_col:w = 52
+Lua function __luamml_array_save_array: = 53
+Lua function __luamml_array_finalize_array: = 54
+\l__luamml_amsmath_tag_struct_num_int=\count409
+
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/lualatex/luamml/luamml-patche
+s-kernel.sty
+Package: luamml-patches-kernel 2025-07-20 v0.7.0 Feel free to add a description
+ here
+)
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/lualatex/luamml/luamml-patche
+s-amsmath.sty
+Package: luamml-patches-amsmath 2025-10-20 v0.7.0 Feel free to add a descriptio
+n here
+Lua function __luamml_amsmath_add_last_to_row: = 55
+Lua function __luamml_amsmath_add_box_to_row: = 56
+Lua function __luamml_amsmath_set_row_columnalign:n = 57
+Lua function __luamml_amsmath_save_inner_table:n = 58
+Lua function __luamml_amsmath_save_smallmatrix: = 59
+Lua function __luamml_amsmath_finalize_inner_table: = 60
+Lua function __luamml_amsmath_finalize_table:n = 61
+Lua function __luamml_amsmath_save_tag: = 62
+Lua function __luamml_amsmath_save_tag_with_struct_elem:N = 63
+Lua function __luamml_amsmath_set_tag: = 64))
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/bookmark/bookmark.sty
+Package: bookmark 2023-12-10 v1.31 PDF bookmarks (HO)
+
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/bookmark/bkm-pdftex.def
+File: bkm-pdftex.def 2023-12-10 v1.31 bookmark driver for pdfTeX and luaTeX (HO
+)
+\BKM@id=\count410
+))
+
+LaTeX template Info: Declaring instance 'basic' of type item on line 36.
+
+
+LaTeX template Info: Declaring instance 'description' of type item on line 36.
+
+ (./Lecture.aux)
+\openout1 = Lecture.aux
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+Inserting `tagpdf' in `pre_shipout_filter'.
+Inserting `tagpdf' in `pre_shipout_filter'.
+
+LaTeX template Info: Declaring instance 'wallpaper' of type header on line 36.
+
+
+LaTeX template Info: Declaring instance 'wallpaper' of type footer on line 36.
+
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: luatex
+*geometry* verbose mode - [ preamble ] result:
+* driver: luatex
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(28.45274pt, 448.92128pt, 28.45274pt)
+* v-part:(T,H,B)=(28.45274pt, 233.31262pt, 22.76219pt)
+* \paperwidth=505.82677pt
+* \paperheight=284.52756pt
+* \textwidth=448.92128pt
+* \textheight=233.31262pt
+* \oddsidemargin=-43.81725pt
+* \evensidemargin=-43.81725pt
+* \topmargin=-77.96053pt
+* \headheight=28.45274pt
+* \headsep=5.69054pt
+* \topskip=11.0pt
+* \footskip=17.07164pt
+* \marginparwidth=4.0pt
+* \marginparsep=10.0pt
+* \columnsep=0.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+Package hyperref Info: Link coloring OFF on input line 36.
+
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/context/base/mkii/supp-pdf.mk
+ii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count411
+\scratchdimen=\dimen323
+\scratchbox=\box104
+\nofMPsegments=\count412
+\nofMParguments=\count413
+\everyMPshowfont=\toks40
+\MPscratchCnt=\count414
+\MPscratchDim=\dimen324
+\MPnumerator=\count415
+\makeMPintoPDFobject=\count416
+\everyMPtoPDFconversion=\toks41
+)
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/epstopdf-pkg/epstopdf-b
+ase.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/00miktex/epstopdf-sys.c
+fg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))<<sRGB.icc>>
+\g__math_luamml_iow=\write5
+
+\openout5 = Lecture-luamml-mathml.html
+
+
+Package tagpdf Info: luamml has been enabled and will create an MathML file.
+
+[1{C:/Users/forge/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
+(./Lecture.toc) [2
+
+] [3
+
+] [4
+
+] (./Lecture.toc) [5
+
+] [6
+
+] [7
+
+] [8
+
+]
+<Logo_RGB_Raster.png, id=346, 186.33615pt x 33.4851pt>
+File: Logo_RGB_Raster.png Graphic file (type png)
+<use Logo_RGB_Raster.png>
+Package luatex.def Info: Logo_RGB_Raster.png  used on input line 14.
+(luatex.def)             Requested size: 224.46063pt x 40.33775pt.
+ [9
+
+<./Logo_RGB_Raster.png>] (./Lecture.toc) [10
+
+] [11
+
+] [12
+
+] [13
+
+] (./Lecture.toc) [14
+
+] [15
+
+] [16
+
+]
+
+LaTeX template Info: Declaring instance 'std' of type header on line 172.
+
+
+[17
+
+]
+
+LaTeX template Info: Declaring instance 'std' of type header on line 194.
+
+ (./Lecture.toc) [18
+
+] [19
+
+] [20
+
+]
+LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <20.74> not available
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 232.
+ [21
+
+] [22
+
+] [23
+
+] (./Lecture.toc) [24
+
+]
+[25
+
+] [26
+
+] (./Lecture.toc) [27
+
+] [28
+
+] [29
+
+]
+\tf@toc=\write6
+
+\openout6 = Lecture.toc
+\tf@toc=\write7
+
+\openout7 = Lecture.toc
+\tf@toc=\write8
+
+\openout8 = Lecture.toc
+\tf@toc=\write9
+
+\openout9 = Lecture.toc
+\tf@toc=\write10
+
+\openout10 = Lecture.toc
+\tf@toc=\write11
+
+\openout11 = Lecture.toc
+\tf@toc=\write12
+
+\openout12 = Lecture.toc
+<<latex-list-css.html>><<latex-align-css.html>> (./Lecture.aux)
+ ***********
+LaTeX2e <2025-11-01>
+L3 programming layer <2025-12-29>
+ ***********
+
+
+Package tagpdf Info: Finalizing the tagging structure:
+(tagpdf)             Writing out ~707 structure objects
+(tagpdf)             with ~568 'MC' leaf nodes.
+(tagpdf)             Be patient if there are lots of objects!
+
+Package tagpdf Info: writing ParentTree
+Package tagpdf Info: writing IDTree
+Package tagpdf Info: writing RoleMap
+Package tagpdf Info: writing ClassMap
+Package tagpdf Info: writing NameSpaces
+Package tagpdf Info: writing StructElems
+Package tagpdf Info: writing Root
+)
+
+Here is how much of LuaTeX's memory you used:
+ 39192 strings out of 476081
+ 125049,1977958 words of node,token memory allocated
+ 592 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 2 glyph, 29 attribute, 58 glue_spec
+, 11 attribute_list, 3 write nodes
+   avail lists: 1:9,2:1708,3:386,4:115,5:188,6:31,7:2117,8:22,9:318,10:20,11:171
+
+ 60519 multiletter control sequences out of 65536+600000
+ 68 fonts using 28335975 bytes
+ 100i,11n,108p,459b,819s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/users/forge/appdata/local/programs/miktex/fonts/opentype/public/lm/lmmono12-
+regular.otf><c:/users/forge/appdata/local/programs/miktex/fonts/opentype/public/
+lm/lmmonolt10-bold.otf><C:/Users/forge/AppData/Local/Programs/MiKTeX/fonts/opent
+ype/public/newcomputermodern/NewCMSans10-Regular.otf><C:/Users/forge/AppData/Loc
+al/Programs/MiKTeX/fonts/opentype/public/newcomputermodern/NewCMSansMath-Regular
+.otf><C:/Users/forge/AppData/Local/Programs/MiKTeX/fonts/opentype/public/newcomp
+utermodern/NewCMSansMath-Regular.otf><C:/Users/forge/AppData/Local/Programs/MiKT
+eX/fonts/opentype/public/newcomputermodern/NewCMSans10-Oblique.otf><c:/users/for
+ge/appdata/local/programs/miktex/fonts/opentype/public/lm/lmmono10-regular.otf><
+C:/Users/forge/AppData/Local/Programs/MiKTeX/fonts/opentype/public/newcomputermo
+dern/NewCMSans10-Bold.otf><C:/Users/forge/AppData/Local/Programs/MiKTeX/fonts/op
+entype/public/newcomputermodern/NewCMSans10-Regular.otf>
+Output written on Lecture.pdf (29 pages, 2051847 bytes).
+
+PDF statistics: 1202 PDF objects out of 1440 (max. 8388607)
+ 65 named destinations out of 1000 (max. 1048576)
+ 4187 words of extra memory for PDF output out of 10000 (max. 100000000)
+

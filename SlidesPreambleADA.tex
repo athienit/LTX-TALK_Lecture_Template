@@ -1,0 +1,144 @@
+% --- Comment out chunks ---
+\usepackage{comment}
+
+% --- Core Accessibility & Structure ---
+\usepackage[american]{babel}
+\usepackage{tagpdf}
+\tagpdfsetup{math/alt/use,activate,interwordspace=true,uncompress}
+\usepackage{enumitem}
+
+% --- Mathematics & Content ---
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage{fancyvrb}
+\usepackage{tikz}
+\usetikzlibrary{calc, shapes, backgrounds}
+\frenchspacing
+
+% --- Hyperlinks ---
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true,%
+	citecolor=blue,%
+	filecolor=blue,%
+	linkcolor=blue,%
+	urlcolor=blue
+}
+
+% --- Color Definitions (Defined Once) ---
+\definecolor{UFBlue}{HTML}{0021A5}
+\definecolor{UFOrange}{HTML}{FA4616} 
+\definecolor{UFGreen}{HTML}{22884C}
+% ======================================================================
+% FRAME DESIGN & COLOR CONFIGURATION
+% ======================================================================
+% 1. Style the container (The Banner Background)
+\EditInstance{header}{std}{
+	background-color = UFBlue,
+	color = white,
+	print-frame-title = true
+}
+
+% 2. Style the text inside the container (The Typography)
+\EditInstance{frametitle}{header}{
+	font = \bfseries\huge
+}
+
+% 3. Banner Visibility Toggles 
+% a. Turn banner off (Make it transparent and heightless)
+\newcommand{\banneroff}{%
+	\EditInstance{header}{std}{
+		background-color = white, % Matches slide background
+		color = white,            % Hides title text
+		print-frame-title = false
+	}
+}
+% b. Restore standard Blue Banner
+\newcommand{\banneron}{%
+	\EditInstance{header}{std}{
+		background-color = UFBlue,
+		color = white,
+		print-frame-title = true
+	}
+}
+
+% =====================================================================
+% MULTI-SLIDE EXAMPLE ENVIRONMENT (ORANGE BANNER)
+% ======================================================================
+% --- UF BRANDING TOGGLES ---
+% Use these to switch banner colors for Examples or Special Sections
+\newcommand{\ufblue}{%
+	\EditInstance{header}{std}{background-color = UFBlue}%
+}
+\newcommand{\uforange}{%
+	\EditInstance{header}{std}{background-color = UFOrange}%
+}
+
+% Alias for pedagogical clarity
+\let\exampleon\uforange
+\let\exampleoff\ufblue
+
+% ======================================================================
+% CUSTOM SEMANTIC BLOCKS (Corrected Left Border)
+% =====================================================================
+\newenvironment{theory}[1][]{%
+	\vspace{0.5em}\noindent
+	\textcolor{UFBlue}{\vrule width 3pt}\hspace{0.5em}%
+	\begin{minipage}[t]{\dimexpr\textwidth-3pt-0.5em\relax}
+		\begin{block}{\strut\color{UFBlue}\bfseries Theory\if\relax\detokenize{#1}\relax\else: #1\fi}
+			\vspace{2pt}}{%
+			\vspace{2pt}\end{block}
+	\end{minipage}\vspace{0.5em}}  
+
+\newenvironment{example}[1][]{%
+	\vspace{0.5em}\noindent
+	\textcolor{UFOrange}{\vrule width 3pt}\hspace{0.5em}%
+	\begin{minipage}[t]{\dimexpr\textwidth-3pt-0.5em\relax}
+		\begin{block}{\strut\color{UFOrange}\bfseries Example\if\relax\detokenize{#1}\relax\else: #1\fi}
+			\vspace{2pt}}{%
+			\vspace{2pt}\end{block}
+	\end{minipage}\vspace{0.5em}}  
+
+\newenvironment{remark}[1][]{%
+	\vspace{0.5em}\noindent
+	\textcolor{UFGreen}{\vrule width 3pt}\hspace{0.5em}%
+	\begin{minipage}[t]{\dimexpr\textwidth-3pt-0.5em\relax}
+		\begin{block}{\strut\color{UFGreen}\bfseries Remark\if\relax\detokenize{#1}\relax\else: #1\fi}
+			\vspace{2pt}}{%
+			\vspace{2pt}\end{block}
+	\end{minipage}\vspace{0.5em}}  
+
+% ======================================================================
+% GLOBAL HOOKS & OVERLAYS
+% ======================================================================
+\makeatletter
+\renewcommand{\@listi}{%
+	\leftmargin\leftmargini
+	\parsep 0pt
+	\topsep 0pt
+	\itemsep 8pt % Increased for better readability
+}
+\let\@listI\@listi
+\makeatother
+
+\NewDocumentCommand\fade{D<>{all}}{%
+	\temporal<#1>{\color{black!40}}{\color{black}}{\color{black!10}}
+}
+
+% Automated Section Transitions
+\let\oldsection\section
+\renewcommand{\section}[1]{%
+	\oldsection{#1}
+	\begin{frame}
+		\frametitle{Outline}
+		\tableofcontents[currentsection]
+	\end{frame}
+	\begin{frame}
+		\thispagestyle{plain} 
+		\centering
+		\huge #1
+	\end{frame}
+}
