@@ -10,14 +10,15 @@
 	pdfstandard   = a-4f,
 	tagging       = on,
 	tagging-setup = {math/setup=mathml-SE},
-	pdfversion    = 2.0
+	pdfversion    = 2.0,
+	testphase={phase-III,math,title}
 }
 
 %\documentclass{ltx-talk}
 \documentclass[mode=handout]{ltx-talk} % Use for handout generation and ADA compliance
 
 % --- Metadata ---
-\title{Lecture Template}
+\title[short-title={Lecture Template}]{Lecture Template}
 \subtitle{ADA Compliant}
 \author{}
 \date{\today}
@@ -35,11 +36,8 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
-	
-	\begin{frame}
-		\maketitle[framestyle=plain]
-	\end{frame}
-	
+\maketitle[framestyle=plain]
+
 	\section{Architecture and Compliance}
 	\begin{frame}
 		\frametitle{Technical Requirements}

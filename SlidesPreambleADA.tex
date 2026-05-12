@@ -20,12 +20,12 @@
 % --- Hyperlinks ---
 \usepackage{hyperref}
 \hypersetup{
-	pdftitle={Lecture Template},
 	colorlinks=true,%
 	citecolor=blue,%
 	filecolor=blue,%
 	linkcolor=blue,%
-	urlcolor=blue
+	urlcolor=blue,
+	pdfdisplaydoctitle=true
 }
 
 % --- Color Definitions (Defined Once) ---
@@ -65,25 +65,30 @@
 	}
 }
 
-% Frame Numbering
+% --- Footer: Frame Numbering (X/Y) ---
 \makeatletter
-% 1. Create a custom metadata variable containing the formatted string.
-%    Placing \hfill inside the variable forces it to the right,
-%    overriding the footer's default alignment.
-\newcommand{\@slideprogress}{\hfill \@framenumber/\@totalframes}
+% Define the content for our progress indicator
+\newcommand{\@slideprogress}{\@framenumber/\@totalframes}
+% Define a truly empty command
+\newcommand{\@emptycontent}{}
 \makeatother
 
-% 2. Register the new variable as a valid footer element in ltx-talk.
+% Register BOTH elements
+% Note: We leave the brackets empty {} because 'talk' elements 
+% automatically look for their matching \@command name.
+\DeclareInstance{footer-element}{empty}{talk}{}
 \DeclareInstance{footer-element}{slideprogress}{talk}{}
 
-% 3. Apply the single element to the footer configuration.
+% Configure the footer instance
 \EditInstance{footer}{std}{
 	background-color = white,
-	color = black,
-	element-order = {slideprogress},
-	left-hspace = 5mm,
-	right-hspace = 5mm,
-	font = \small\sffamily
+	color            = black,
+	% Listing two elements forces the 'separator' (\hfill) to trigger between them
+	element-order    = {empty, slideprogress},
+	separator        = \hfill,  
+	left-hspace      = 5mm,    
+	right-hspace     = 5mm,    
+	font             = \small\sffamily
 }
 
 % =====================================================================
@@ -150,11 +155,23 @@
 }
 
 % Automated Section Transitions
+%\let\oldsection\section
+%\renewcommand{\section}[1]{%
+%	\oldsection{#1}
+%	\begin{frame}
+%		\frametitle{Outline: \insertsection}
+%		\tableofcontents[currentsection]
+%	\end{frame}
+%}
+
+% Automated Section Transitions for ADA Compliance
 \let\oldsection\section
 \renewcommand{\section}[1]{%
 	\oldsection{#1}
 	\begin{frame}
-		\frametitle{Outline}
+		% This makes each outline heading unique (e.g., "Outline: Introduction")
+		% which prevents the "repeated heading" error in Canvas.
+		\frametitle{Outline: #1}
 		\tableofcontents[currentsection]
 	\end{frame}
 }
