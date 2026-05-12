@@ -14,8 +14,8 @@
 	testphase={phase-III,math,title}
 }
 
-%\documentclass{ltx-talk}
-\documentclass[mode=handout]{ltx-talk} % Use for handout generation and ADA compliance
+\documentclass{ltx-talk}
+%\documentclass[mode=handout]{ltx-talk} % Use for handout generation and ADA compliance
 
 % --- Metadata ---
 \title[short-title={Lecture Template}]{Lecture Template}
@@ -157,15 +157,21 @@
 \section{Custom Frames and Blocks}
 	\begin{frame}
 		\frametitle{Custom Blocks}
+		\begin{uncoverenv}<1>
 		\begin{theory}[Optional Title]
 			This is a theorem
 		\end{theory}
+		\end{uncoverenv}
+		\begin{uncoverenv}<2>
 		\begin{example}[Optional Title]
 			This is an example.
 		\end{example}
+		\end{uncoverenv}
+		\begin{uncoverenv}<3>
 		\begin{remark}[Optional Title]
 			This is a remark.
 		\end{remark}
+		\end{uncoverenv}
 		
 	\end{frame}
 	
@@ -255,13 +261,15 @@
 	
 	
 	\begin{frame}
-		\frametitle{Overlay Suppression}
+		\frametitle{Overlay Suppression and Other Info}
 		To generate a static version for student notes, use:
 		\vspace{0.3cm}
 		\begin{center}
 			\large \texttt{\textbackslash documentclass[mode=handout]\{ltx-talk\}}
 		\end{center}
 		\vspace{0.3cm}
+		
+		More information on overlay functions and environments in Section 9 of ltx-talk documentation.
 	\end{frame}
 	
 	

@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.24.0 (MiKTeX 26.2) (format=lualatex 2026.5.11)  12 MAY 2026 13:50
+This is LuaHBTeX, Version 1.24.0 (MiKTeX 26.2) (format=lualatex 2026.5.11)  12 MAY 2026 18:13
  restricted system commands enabled.
 **Lecture.tex
 (./Lecture.tex
@@ -326,6 +326,15 @@ tphase-tikz.sty
 Package: latex-lab-testphase-tikz 2025-09-27 v0.80d Code related to the tagging
  of tikz pictures
 ))
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/latex-lab/math-latex-la
+b-testphase.ltx
+File: math-latex-lab-testphase.ltx 2023-07-20 v0.8a latex-lab wrapper math
+)
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/latex-lab/title-latex-l
+ab-testphase.ltx
+File: title-latex-lab-testphase.ltx 2025-03-08 v0.85d Changes related to the ta
+gging of the title
+)
 (C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/pdfmanagement/pdfmanage
 ment-firstaid.sty
 Package: pdfmanagement-firstaid 2026-04-21 v0.97a LaTeX PDF management bundle /
@@ -1600,14 +1609,14 @@ File: tikzlibrarybackgrounds.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgf@layerboxsaved@background=\box103
 )
 
-LaTeX template Info: Declaring instance 'std' of type header on line 63.
+LaTeX template Info: Declaring instance 'std' of type header on line 65.
 
 
 LaTeX template Info: Declaring instance 'header' of type frametitle on line
-(template)           69.
+(template)           71.
 
 
-LaTeX template Info: Declaring instance 'std' of type footer on line 116.
+LaTeX template Info: Declaring instance 'std' of type footer on line 118.
 
 )
 (C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/lualatex/luamml/luamml.sty
@@ -1664,41 +1673,41 @@ File: bkm-pdftex.def 2023-12-10 v1.31 bookmark driver for pdfTeX and luaTeX (HO
 \BKM@id=\count415
 ))
 
-LaTeX template Info: Declaring instance 'basic' of type item on line 36.
+LaTeX template Info: Declaring instance 'basic' of type item on line 37.
 
 
-LaTeX template Info: Declaring instance 'description' of type item on line 36.
+LaTeX template Info: Declaring instance 'description' of type item on line 37.
 
  (./Lecture.aux)
 \openout1 = Lecture.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
 Inserting `tagpdf' in `pre_shipout_filter'.
 Inserting `tagpdf' in `pre_shipout_filter'.
 
-LaTeX template Info: Declaring instance 'wallpaper' of type header on line 36.
+LaTeX template Info: Declaring instance 'wallpaper' of type header on line 37.
 
 
-LaTeX template Info: Declaring instance 'wallpaper' of type footer on line 36.
+LaTeX template Info: Declaring instance 'wallpaper' of type footer on line 37.
 
 
 *geometry* driver: auto-detecting
@@ -1735,7 +1744,7 @@ LaTeX template Info: Declaring instance 'wallpaper' of type footer on line 36.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 36.
+Package hyperref Info: Link coloring OFF on input line 37.
 
 (C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/context/base/mkii/supp-pdf.mk
 ii
@@ -1771,121 +1780,158 @@ Package tagpdf Info: luamml has been enabled and will create an MathML file.
 
 [1{C:/Users/forge/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
 
-LaTeX template Info: Declaring instance 'std' of type header on line 41.
+LaTeX template Info: Declaring instance 'std' of type header on line 42.
 
 
 (./Lecture.toc) [2
 
 ]
 
-LaTeX template Info: Declaring instance 'std' of type header on line 41.
+LaTeX template Info: Declaring instance 'std' of type header on line 42.
 
  [3
 
 ]
 
-LaTeX template Info: Declaring instance 'std' of type header on line 61.
+LaTeX template Info: Declaring instance 'std' of type header on line 62.
 
  (./Lecture.toc) [4
 
 ]
 
-LaTeX template Info: Declaring instance 'std' of type header on line 61.
+LaTeX template Info: Declaring instance 'std' of type header on line 62.
 
  [5
 
 ] [6
 
+] [7
+
+] [8
+
+] [9
+
 ]
-<Logo_RGB_Raster.png, id=333, 186.33615pt x 33.4851pt>
+<Logo_RGB_Raster.png, id=372, 186.33615pt x 33.4851pt>
 File: Logo_RGB_Raster.png Graphic file (type png)
 <use Logo_RGB_Raster.png>
 Package luatex.def Info: Logo_RGB_Raster.png  used on input line 14.
 (luatex.def)             Requested size: 224.46063pt x 40.33775pt.
- [7
+ [10
 
 <./Logo_RGB_Raster.png>]
 
-LaTeX template Info: Declaring instance 'std' of type header on line 125.
-
-
-(./Lecture.toc) [8
-
-]
-
-LaTeX template Info: Declaring instance 'std' of type header on line 125.
-
- [9
-
-] [10
-
-]
-
-LaTeX template Info: Declaring instance 'std' of type header on line 156.
+LaTeX template Info: Declaring instance 'std' of type header on line 126.
 
  (./Lecture.toc) [11
 
 ]
 
-LaTeX template Info: Declaring instance 'std' of type header on line 156.
+LaTeX template Info: Declaring instance 'std' of type header on line 126.
 
  [12
 
-]
+] [13
 
-LaTeX template Info: Declaring instance 'std' of type header on line 171.
+] [14
 
- [13
-
-]
-
-LaTeX template Info: Declaring instance 'std' of type header on line 193.
-
-
-LaTeX template Info: Declaring instance 'std' of type header on line 195.
-
- (./Lecture.toc)
-[14
+] [15
 
 ]
 
-LaTeX template Info: Declaring instance 'std' of type header on line 195.
+LaTeX template Info: Declaring instance 'std' of type header on line 157.
 
- [15
+ (./Lecture.toc) [16
 
 ]
-LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <20.74> not available
-(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 231.
- [16
 
-] [17
+LaTeX template Info: Declaring instance 'std' of type header on line 157.
+
+
+[17
 
 ] [18
 
-]
-
-LaTeX template Info: Declaring instance 'std' of type header on line 267.
-
- (./Lecture.toc) [19
+] [19
 
 ]
 
-LaTeX template Info: Declaring instance 'std' of type header on line 267.
+LaTeX template Info: Declaring instance 'std' of type header on line 178.
 
  [20
 
 ]
 
-LaTeX template Info: Declaring instance 'std' of type header on line 278.
+LaTeX template Info: Declaring instance 'std' of type header on line 200.
+
+
+LaTeX template Info: Declaring instance 'std' of type header on line 202.
 
  (./Lecture.toc) [21
 
 ]
 
-LaTeX template Info: Declaring instance 'std' of type header on line 278.
+LaTeX template Info: Declaring instance 'std' of type header on line 202.
+
+ [22
+
+]
+LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <20.74> not available
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 238.
+ [23
 
 
-[22
+warning  (pdf backend): pop empty color page stack 1
+] [24
+
+] [25
+
+] [26
+
+] [27
+
+] [28
+
+] [29
+
+] [30
+
+] [31
+
+] [32
+
+]
+
+LaTeX template Info: Declaring instance 'std' of type header on line 276.
+
+ (./Lecture.toc) [33
+
+]
+
+LaTeX template Info: Declaring instance 'std' of type header on line 276.
+
+ [34
+
+]
+
+LaTeX template Info: Declaring instance 'std' of type header on line 287.
+
+
+(./Lecture.toc) [35
+
+]
+
+LaTeX template Info: Declaring instance 'std' of type header on line 287.
+
+ [36
+
+] [37
+
+] [38
+
+] [39
+
+] [40
 
 ]
 \tf@toc=\write7
@@ -1917,8 +1963,8 @@ L3 programming layer <2026-03-20>
 
 
 Package tagpdf Info: Finalizing the tagging structure:
-(tagpdf)             Writing out ~694 structure objects
-(tagpdf)             with ~552 'MC' leaf nodes.
+(tagpdf)             Writing out ~696 structure objects
+(tagpdf)             with ~607 'MC' leaf nodes.
 (tagpdf)             Be patient if there are lots of objects!
 
 Package tagpdf Info: writing ParentTree
@@ -1931,16 +1977,16 @@ Package tagpdf Info: writing Root
 )
 
 Here is how much of LuaTeX's memory you used:
- 39099 strings out of 475900
+ 39278 strings out of 475900
  125049,1977958 words of node,token memory allocated
- 598 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 2 glyph, 32 attribute, 58 glue_spec
-, 11 attribute_list, 3 write nodes
-   avail lists: 1:8,2:2173,3:374,4:124,5:188,6:32,7:2137,8:22,9:322,10:20,11:171
+ 622 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 2 glyph, 42 attribute, 58 glue_spec
+, 13 attribute_list, 3 write nodes
+   avail lists: 1:9,2:2193,3:385,4:124,5:226,6:58,7:2140,8:23,9:347,10:24,11:178
 
- 60621 multiletter control sequences out of 65536+600000
- 66 fonts using 30903479 bytes
- 102i,11n,108p,460b,833s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 60634 multiletter control sequences out of 65536+600000
+ 66 fonts using 30903431 bytes
+ 102i,11n,108p,460b,837s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/users/forge/appdata/local/programs/miktex/fonts/opentype/public/lm/lmmono12-
 regular.otf><c:/users/forge/appdata/local/programs/miktex/fonts/opentype/public/
 lm/lmmonolt10-bold.otf><c:/users/forge/appdata/local/programs/miktex/fonts/opent
@@ -1953,9 +1999,9 @@ ge/appdata/local/programs/miktex/fonts/opentype/public/lm/lmmono10-regular.otf><
 c:/users/forge/appdata/local/programs/miktex/fonts/opentype/public/newcomputermo
 dern/newcmsans10-bold.otf><c:/users/forge/appdata/local/programs/miktex/fonts/op
 entype/public/newcomputermodern/newcmsans10-regular.otf>
-Output written on Lecture.pdf (22 pages, 2037894 bytes).
+Output written on Lecture.pdf (40 pages, 2118196 bytes).
 
-PDF statistics: 1152 PDF objects out of 1200 (max. 8388607)
- 58 named destinations out of 1000 (max. 1048576)
- 4127 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 1368 PDF objects out of 1440 (max. 8388607)
+ 136 named destinations out of 1000 (max. 1048576)
+ 4137 words of extra memory for PDF output out of 10000 (max. 100000000)
 

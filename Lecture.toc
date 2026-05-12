@@ -1,8 +1,8 @@
 \babel@toc {american}{}\relax 
 \contentsline {section}{Architecture and Compliance}{2}{section.1}%
 \contentsline {section}{Lists/Tables/Figures}{4}{section.2}%
-\contentsline {section}{Math/Verbatim}{8}{section.3}%
-\contentsline {section}{Custom Frames and Blocks}{11}{section.4}%
-\contentsline {section}{Toggle Visibility Logic}{14}{section.5}%
-\contentsline {section}{UF Brand Center}{19}{section.6}%
-\contentsline {section}{Summary}{21}{section.7}%
+\contentsline {section}{Math/Verbatim}{11}{section.3}%
+\contentsline {section}{Custom Frames and Blocks}{16}{section.4}%
+\contentsline {section}{Toggle Visibility Logic}{21}{section.5}%
+\contentsline {section}{UF Brand Center}{33}{section.6}%
+\contentsline {section}{Summary}{35}{section.7}%
