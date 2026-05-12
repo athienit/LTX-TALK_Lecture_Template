@@ -1,14 +1,13 @@
+
 % --- Comment out chunks ---
 \usepackage{comment}
 
 % --- Core Accessibility & Structure ---
 \usepackage[american]{babel}
-\usepackage{tagpdf}
 \tagpdfsetup{math/alt/use,activate,interwordspace=true,uncompress}
-\usepackage{enumitem}
 
-% --- Mathematics & Content ---
-\usepackage{amsmath}
+
+% --- Math Fonts and others ---
 \usepackage{graphicx}
 \usepackage{booktabs}
 \usepackage{tabularx}
@@ -21,6 +20,7 @@
 % --- Hyperlinks ---
 \usepackage{hyperref}
 \hypersetup{
+	pdftitle={Lecture Template},
 	colorlinks=true,%
 	citecolor=blue,%
 	filecolor=blue,%
@@ -30,8 +30,8 @@
 
 % --- Color Definitions (Defined Once) ---
 \definecolor{UFBlue}{HTML}{0021A5}
-\definecolor{UFOrange}{HTML}{FA4616} 
-\definecolor{UFGreen}{HTML}{22884C}
+\definecolor{UFOrange}{HTML}{A53200} 
+\definecolor{UFGreen}{HTML}{1A5632}
 % ======================================================================
 % FRAME DESIGN & COLOR CONFIGURATION
 % ======================================================================
@@ -63,6 +63,27 @@
 		color = white,
 		print-frame-title = true
 	}
+}
+
+% Frame Numbering
+\makeatletter
+% 1. Create a custom metadata variable containing the formatted string.
+%    Placing \hfill inside the variable forces it to the right,
+%    overriding the footer's default alignment.
+\newcommand{\@slideprogress}{\hfill \@framenumber/\@totalframes}
+\makeatother
+
+% 2. Register the new variable as a valid footer element in ltx-talk.
+\DeclareInstance{footer-element}{slideprogress}{talk}{}
+
+% 3. Apply the single element to the footer configuration.
+\EditInstance{footer}{std}{
+	background-color = white,
+	color = black,
+	element-order = {slideprogress},
+	left-hspace = 5mm,
+	right-hspace = 5mm,
+	font = \small\sffamily
 }
 
 % =====================================================================
@@ -135,10 +156,5 @@
 	\begin{frame}
 		\frametitle{Outline}
 		\tableofcontents[currentsection]
-	\end{frame}
-	\begin{frame}
-		\thispagestyle{plain} 
-		\centering
-		\huge #1
 	\end{frame}
 }
