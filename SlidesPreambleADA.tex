@@ -47,9 +47,9 @@
 	% --- Color Definitions (Defined Once) ---
 	% Defines the official University of Florida brand colors using HTML hex codes
 	\definecolor{UFBlue}{HTML}{0021A5}
-	\definecolor{UFOrange}{HTML}{A53200}
+	\definecolor{UFOrange}{HTML}{994C00}
 	\definecolor{UFGreen}{HTML}{1A5632}
-	\definecolor{UFRed}{HTML}{B71C1C}
+	\definecolor{UFRed}{HTML}{C8102E}
 	
 	% --- Custom shorthand commands ---
 	\newcommand{\vs}{\vspace{0.2cm}}
@@ -161,6 +161,15 @@
 		\textcolor{UFGreen}{\vrule width 3pt}\hspace{0.5em}%
 		\begin{minipage}[t]{\dimexpr\textwidth-3pt-0.5em\relax}
 			\begin{block}{\strut\color{UFGreen}\bfseries Remark\if\relax\detokenize{#1}\relax\else: #1\fi}
+				\vspace{2pt}}{%
+				\vspace{2pt}\end{block}
+		\end{minipage}\vspace{0.5em}}  
+	
+	\newenvironment{definition}[1][]{%
+		\vspace{0.5em}\noindent
+		\textcolor{UFRed}{\vrule width 3pt}\hspace{0.5em}%
+		\begin{minipage}[t]{\dimexpr\textwidth-3pt-0.5em\relax}
+			\begin{block}{\strut\color{UFRed}\bfseries Definition\if\relax\detokenize{#1}\relax\else: #1\fi}
 				\vspace{2pt}}{%
 				\vspace{2pt}\end{block}
 		\end{minipage}\vspace{0.5em}}  
