@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.24.0 (MiKTeX 26.2) (format=lualatex 2026.5.11)  12 MAY 2026 18:13
+This is LuaHBTeX, Version 1.24.0 (MiKTeX 26.2) (format=lualatex 2026.5.11)  13 MAY 2026 14:42
  restricted system commands enabled.
 **Lecture.tex
 (./Lecture.tex
@@ -1187,8 +1187,9 @@ Package babel Info: Hyphen rules for 'australian' set to \l@ukenglish
 (babel)             (\language74). Reported on input line 105.
 Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
 (babel)             (\language74). Reported on input line 108.
-)))
-(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/booktabs/booktabs.sty
+))) (C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/cancel/cancel.sty
+Package: cancel 2013/04/12 v2.2 Cancel math terms
+) (C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \heavyrulewidth=\dimen256
 \lightrulewidth=\dimen257
@@ -1207,8 +1208,7 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \@thisruleclass=\count383
 \@lastruleclass=\count384
 \@thisrulewidth=\dimen268
-)
-(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/tools/tabularx.sty
+) (C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/tools/tabularx.sty
 Package: tabularx 2023/12/11 v2.12a `tabularx' package (DPC)
 \TX@col@width=\dimen269
 \TX@old@table=\dimen270
@@ -1609,14 +1609,14 @@ File: tikzlibrarybackgrounds.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgf@layerboxsaved@background=\box103
 )
 
-LaTeX template Info: Declaring instance 'std' of type header on line 65.
+LaTeX template Info: Declaring instance 'std' of type header on line 66.
 
 
 LaTeX template Info: Declaring instance 'header' of type frametitle on line
-(template)           71.
+(template)           72.
 
 
-LaTeX template Info: Declaring instance 'std' of type footer on line 118.
+LaTeX template Info: Declaring instance 'std' of type footer on line 119.
 
 )
 (C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/lualatex/luamml/luamml.sty
@@ -1854,36 +1854,36 @@ LaTeX template Info: Declaring instance 'std' of type header on line 157.
 
 ] [19
 
-]
-
-LaTeX template Info: Declaring instance 'std' of type header on line 178.
-
- [20
+] [20
 
 ]
 
-LaTeX template Info: Declaring instance 'std' of type header on line 200.
+LaTeX template Info: Declaring instance 'std' of type header on line 183.
 
-
-LaTeX template Info: Declaring instance 'std' of type header on line 202.
-
- (./Lecture.toc) [21
+ [21
 
 ]
 
-LaTeX template Info: Declaring instance 'std' of type header on line 202.
+LaTeX template Info: Declaring instance 'std' of type header on line 205.
 
- [22
+
+LaTeX template Info: Declaring instance 'std' of type header on line 207.
+
+ (./Lecture.toc) [22
+
+]
+
+LaTeX template Info: Declaring instance 'std' of type header on line 207.
+
+ [23
 
 ]
 LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <20.74> not available
-(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 238.
- [23
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 243.
+ [24
 
 
 warning  (pdf backend): pop empty color page stack 1
-] [24
-
 ] [25
 
 ] [26
@@ -1900,38 +1900,40 @@ warning  (pdf backend): pop empty color page stack 1
 
 ] [32
 
-]
-
-LaTeX template Info: Declaring instance 'std' of type header on line 276.
-
- (./Lecture.toc) [33
+] [33
 
 ]
 
-LaTeX template Info: Declaring instance 'std' of type header on line 276.
+LaTeX template Info: Declaring instance 'std' of type header on line 281.
 
- [34
-
-]
-
-LaTeX template Info: Declaring instance 'std' of type header on line 287.
-
-
-(./Lecture.toc) [35
+ (./Lecture.toc) [34
 
 ]
 
-LaTeX template Info: Declaring instance 'std' of type header on line 287.
+LaTeX template Info: Declaring instance 'std' of type header on line 281.
 
- [36
+ [35
 
-] [37
+]
+
+LaTeX template Info: Declaring instance 'std' of type header on line 292.
+
+
+(./Lecture.toc) [36
+
+]
+
+LaTeX template Info: Declaring instance 'std' of type header on line 292.
+
+ [37
 
 ] [38
 
 ] [39
 
 ] [40
+
+] [41
 
 ]
 \tf@toc=\write7
@@ -1963,8 +1965,8 @@ L3 programming layer <2026-03-20>
 
 
 Package tagpdf Info: Finalizing the tagging structure:
-(tagpdf)             Writing out ~696 structure objects
-(tagpdf)             with ~607 'MC' leaf nodes.
+(tagpdf)             Writing out ~702 structure objects
+(tagpdf)             with ~613 'MC' leaf nodes.
 (tagpdf)             Be patient if there are lots of objects!
 
 Package tagpdf Info: writing ParentTree
@@ -1977,15 +1979,15 @@ Package tagpdf Info: writing Root
 )
 
 Here is how much of LuaTeX's memory you used:
- 39278 strings out of 475900
+ 39339 strings out of 475900
  125049,1977958 words of node,token memory allocated
  622 words of node memory still in use:
    7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 2 glyph, 42 attribute, 58 glue_spec
 , 13 attribute_list, 3 write nodes
    avail lists: 1:9,2:2193,3:385,4:124,5:226,6:58,7:2140,8:23,9:347,10:24,11:178
 
- 60634 multiletter control sequences out of 65536+600000
- 66 fonts using 30903431 bytes
+ 60688 multiletter control sequences out of 65536+600000
+ 66 fonts using 30903463 bytes
  102i,11n,108p,460b,837s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/users/forge/appdata/local/programs/miktex/fonts/opentype/public/lm/lmmono12-
 regular.otf><c:/users/forge/appdata/local/programs/miktex/fonts/opentype/public/
@@ -1999,9 +2001,9 @@ ge/appdata/local/programs/miktex/fonts/opentype/public/lm/lmmono10-regular.otf><
 c:/users/forge/appdata/local/programs/miktex/fonts/opentype/public/newcomputermo
 dern/newcmsans10-bold.otf><c:/users/forge/appdata/local/programs/miktex/fonts/op
 entype/public/newcomputermodern/newcmsans10-regular.otf>
-Output written on Lecture.pdf (40 pages, 2118196 bytes).
+Output written on Lecture.pdf (41 pages, 2124357 bytes).
 
-PDF statistics: 1368 PDF objects out of 1440 (max. 8388607)
- 136 named destinations out of 1000 (max. 1048576)
- 4137 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 1381 PDF objects out of 1440 (max. 8388607)
+ 137 named destinations out of 1000 (max. 1048576)
+ 4172 words of extra memory for PDF output out of 10000 (max. 100000000)
 
