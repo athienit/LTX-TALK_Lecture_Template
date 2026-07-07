@@ -26,6 +26,9 @@
 	\usepackage{xcolor}
 	% fancyvrb is used for improved verbatim text environments (e.g., code blocks)
 	\usepackage{fancyvrb}
+	
+	\usepackage{pgfplots}
+	\pgfplotsset{compat=1.18}
 	% TikZ is loaded for creating vector graphics and diagrams directly in LaTeX
 	\usepackage{tikz}
 	\usetikzlibrary{calc, shapes, backgrounds}
@@ -51,6 +54,7 @@
 	\definecolor{UFOrange}{HTML}{994C00}
 	\definecolor{UFGreen}{HTML}{1A5632}
 	\definecolor{UFRed}{HTML}{C8102E}
+	\definecolor{UFGray}{HTML}{4A4A4A}
 	
 	% --- Custom shorthand commands ---
 	\newcommand{\vs}{\vspace{0.2cm}}
@@ -175,6 +179,16 @@
 				\vspace{2pt}\end{block}
 		\end{minipage}\vspace{0.5em}}  
 	
+	% Create the new block environment with an optional title argument
+	\newenvironment{adablock}[1][Block]{%
+		\vspace{0.5em}\noindent
+		\textcolor{UFGray}{\vrule width 3pt}\hspace{0.5em}%
+		\begin{minipage}[t]{\dimexpr\textwidth-3pt-0.5em\relax}
+			\begin{block}{\strut\color{UFGray}\bfseries #1}
+				\vspace{2pt}}{%
+				\vspace{2pt}\end{block}
+		\end{minipage}\vspace{0.5em}}
+	
 	% ======================================================================
 	% GLOBAL HOOKS & OVERLAYS
 	% ======================================================================
@@ -183,7 +197,7 @@
 	\renewcommand{\@listi}{%
 		\leftmargin\leftmargini
 		\parsep 0pt
-		\topsep 0pt
+		\topsep 4pt
 		\itemsep 8pt % Increased for better readability
 	}
 	\let\@listI\@listi

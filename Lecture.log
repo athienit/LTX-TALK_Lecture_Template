@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.24.0 (MiKTeX 26.2) (format=lualatex 2026.5.11)  13 MAY 2026 14:42
+This is LuaHBTeX, Version 1.24.0 (MiKTeX 26.2) (format=lualatex 2026.5.11)  7 JUL 2026 14:04
  restricted system commands enabled.
 **Lecture.tex
 (./Lecture.tex
@@ -1228,6 +1228,11 @@ Package: fancyvrb 2026/04/16 4.6a verbatim text (tvz,hv)
 \FV@StepNumber=\count389
 \FV@OutFile=\write4
 )
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/pgfplots/pgfplots.sty
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgfplots/pgfplots.rev
+ision.tex)
+Package: pgfplots 2021/05/15 v1.18.1 Data Visualization (1.18.1)
+
 (C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/pgf/frontendlayer/tikz.
 sty
 (C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/pgf/basiclayer/pgf.sty
@@ -1530,6 +1535,138 @@ File: pgfmodulematrix.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 z/libraries/tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 )))
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgfplots/pgfplots.cod
+e.tex
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgfplots/pgfplotscore
+.code.tex
+Package pgfplots info on input line 124: Initializing with LUA version Lua 5.3
+\pgfplots@luabackend@table=\catcodetable16
+\t@pgfplots@toka=\toks39
+\t@pgfplots@tokb=\toks40
+\t@pgfplots@tokc=\toks41
+\pgfplots@tmpa=\dimen324
+\c@pgfplots@coordindex=\count411
+\c@pgfplots@scanlineindex=\count412
+
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgfplots/sys/pgfplots
+sysgeneric.code.tex))
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgfplots/libs/pgfplot
+slibrary.code.tex)
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgfplots/oldpgfcompat
+ib/pgfplotsoldpgfsupp_loader.code.tex
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgf/libraries/pgflibr
+aryfpu.code.tex)
+Package pgfplots: loading complementary utilities for your pgf version...
+\t@pgf@toka=\toks42
+\t@pgf@tokb=\toks43
+\t@pgf@tokc=\toks44
+
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgfplots/oldpgfcompat
+ib/pgfplotsoldpgfsupp_pgfutil-common-lists.tex)
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgf/libraries/luamath
+/pgflibraryluamath.code.tex)
+Package pgfplots info on input line 290: luamath library shipped with pgf 3.1.1
+1a is up-to-date
+)
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgfplots/util/pgfplot
+sutil.code.tex
+Package pgfplots info on input line 82: Found new luatex: initializing lua comm
+ands instead of write18 (shell-escape)
+
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgfplots/liststructur
+e/pgfplotsliststructure.code.tex)
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgfplots/liststructur
+e/pgfplotsliststructureext.code.tex)
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgfplots/liststructur
+e/pgfplotsarray.code.tex
+\c@pgfplotsarray@tmp=\count413
+)
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgfplots/liststructur
+e/pgfplotsmatrix.code.tex)
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgfplots/numtable/pgf
+plotstableshared.code.tex
+\c@pgfplotstable@counta=\count414
+\t@pgfplotstable@a=\toks45
+)
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgfplots/liststructur
+e/pgfplotsdeque.code.tex)
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgfplots/util/pgfplot
+sbinary.code.tex
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgfplots/util/pgfplot
+sbinary.data.code.tex))
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgfplots/util/pgfplot
+sutil.verb.code.tex)
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgfplots/libs/pgflibr
+arypgfplots.surfshading.code.tex
+\c@pgfplotslibrarysurf@no=\count415
+
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgfplots/sys/pgflibra
+rypgfplots.surfshading.pgfsys-luatex.def)))
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgfplots/util/pgfplot
+scolormap.code.tex
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgfplots/util/pgfplot
+scolor.code.tex))
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgfplots/pgfplotsstac
+kedplots.code.tex)
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgfplots/pgfplotsplot
+handlers.code.tex
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgfplots/pgfplotsmesh
+plothandler.code.tex
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgfplots/pgfplotsmesh
+plotimage.code.tex)))
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgfplots/pgfplots.sca
+ling.code.tex)
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgfplots/pgfplotscoor
+dprocessing.code.tex)
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgfplots/pgfplots.err
+orbars.code.tex)
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgfplots/pgfplots.mar
+kers.code.tex)
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgfplots/pgfplotstick
+s.code.tex)
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgfplots/pgfplots.pat
+hs.code.tex)
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgf/frontendlayer/tik
+z/libraries/tikzlibrarydecorations.code.tex
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgf/modules/pgfmodule
+decorations.code.tex
+\pgfdecoratedcompleteddistance=\dimen325
+\pgfdecoratedremainingdistance=\dimen326
+\pgfdecoratedinputsegmentcompleteddistance=\dimen327
+\pgfdecoratedinputsegmentremainingdistance=\dimen328
+\pgf@decorate@distancetomove=\dimen329
+\pgf@decorate@repeatstate=\count416
+\pgfdecorationsegmentamplitude=\dimen330
+\pgfdecorationsegmentlength=\dimen331
+)
+\tikz@lib@dec@box=\box82
+)
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgf/frontendlayer/tik
+z/libraries/tikzlibrarydecorations.pathmorphing.code.tex
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgf/libraries/decorat
+ions/pgflibrarydecorations.pathmorphing.code.tex))
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgf/frontendlayer/tik
+z/libraries/tikzlibrarydecorations.pathreplacing.code.tex
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgf/libraries/decorat
+ions/pgflibrarydecorations.pathreplacing.code.tex))
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgfplots/libs/tikzlib
+rarypgfplots.contourlua.code.tex)
+\pgfplots@numplots=\count417
+\pgfplots@xmin@reg=\dimen332
+\pgfplots@xmax@reg=\dimen333
+\pgfplots@ymin@reg=\dimen334
+\pgfplots@ymax@reg=\dimen335
+\pgfplots@zmin@reg=\dimen336
+\pgfplots@zmax@reg=\dimen337
+)
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgf/frontendlayer/tik
+z/libraries/tikzlibraryplotmarks.code.tex
+File: tikzlibraryplotmarks.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+
+(C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgf/libraries/pgflibr
+aryplotmarks.code.tex
+File: pgflibraryplotmarks.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)))
 (C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgf/frontendlayer/tik
 z/libraries/tikzlibrarycalc.code.tex
 File: tikzlibrarycalc.code.tex 2025-08-29 v3.1.11a (3.1.11a)
@@ -1581,50 +1718,50 @@ File: tikzlibraryshapes.multipart.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 (C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgf/libraries/shapes/
 pgflibraryshapes.multipart.code.tex
 File: pgflibraryshapes.multipart.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgfnodepartlowerbox=\box82
-\pgfnodeparttwobox=\box83
-\pgfnodepartthreebox=\box84
-\pgfnodepartfourbox=\box85
-\pgfnodeparttwentybox=\box86
-\pgfnodepartnineteenbox=\box87
-\pgfnodeparteighteenbox=\box88
-\pgfnodepartseventeenbox=\box89
-\pgfnodepartsixteenbox=\box90
-\pgfnodepartfifteenbox=\box91
-\pgfnodepartfourteenbox=\box92
-\pgfnodepartthirteenbox=\box93
-\pgfnodeparttwelvebox=\box94
-\pgfnodepartelevenbox=\box95
-\pgfnodeparttenbox=\box96
-\pgfnodepartninebox=\box97
-\pgfnodeparteightbox=\box98
-\pgfnodepartsevenbox=\box99
-\pgfnodepartsixbox=\box100
-\pgfnodepartfivebox=\box101
+\pgfnodepartlowerbox=\box83
+\pgfnodeparttwobox=\box84
+\pgfnodepartthreebox=\box85
+\pgfnodepartfourbox=\box86
+\pgfnodeparttwentybox=\box87
+\pgfnodepartnineteenbox=\box88
+\pgfnodeparteighteenbox=\box89
+\pgfnodepartseventeenbox=\box90
+\pgfnodepartsixteenbox=\box91
+\pgfnodepartfifteenbox=\box92
+\pgfnodepartfourteenbox=\box93
+\pgfnodepartthirteenbox=\box94
+\pgfnodeparttwelvebox=\box95
+\pgfnodepartelevenbox=\box96
+\pgfnodeparttenbox=\box97
+\pgfnodepartninebox=\box98
+\pgfnodeparteightbox=\box99
+\pgfnodepartsevenbox=\box100
+\pgfnodepartsixbox=\box101
+\pgfnodepartfivebox=\box102
 )))
 (C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/generic/pgf/frontendlayer/tik
 z/libraries/tikzlibrarybackgrounds.code.tex
 File: tikzlibrarybackgrounds.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgf@layerbox@background=\box102
-\pgf@layerboxsaved@background=\box103
+\pgf@layerbox@background=\box103
+\pgf@layerboxsaved@background=\box104
 )
 
-LaTeX template Info: Declaring instance 'std' of type header on line 66.
+LaTeX template Info: Declaring instance 'std' of type header on line 70.
 
 
 LaTeX template Info: Declaring instance 'header' of type frametitle on line
-(template)           72.
+(template)           76.
 
 
-LaTeX template Info: Declaring instance 'std' of type footer on line 119.
+LaTeX template Info: Declaring instance 'std' of type footer on line 123.
 
 )
 (C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/lualatex/luamml/luamml.sty
 Package: luamml 2026-02-27 v0.8.0 Automatically generate presentational MathML 
 from LuaTeX math expressions
-\l__luamml_flag_int=\count411
-\l__luamml_pretty_int=\count412
-\tracingmathml=\count413
+\l__luamml_flag_int=\count418
+\l__luamml_pretty_int=\count419
+\tracingmathml=\count420
 Lua function RegisterFamilyMapping = 42
 Lua function RegisterTextFamily = 43
 Inserting `dump_list' in `pre_mlist_to_hlist_filter'.
@@ -1642,7 +1779,7 @@ Lua function __luamml_array_init_col: = 53
 Lua function __luamml_array_finalize_col:w = 54
 Lua function __luamml_array_save_array: = 55
 Lua function __luamml_array_finalize_array: = 56
-\l__luamml_amsmath_tag_struct_num_int=\count414
+\l__luamml_amsmath_tag_struct_num_int=\count421
 
 (C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/lualatex/luamml/luamml-patche
 s-kernel.sty
@@ -1670,7 +1807,7 @@ Package: bookmark 2023-12-10 v1.31 PDF bookmarks (HO)
 (C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/bookmark/bkm-pdftex.def
 File: bkm-pdftex.def 2023-12-10 v1.31 bookmark driver for pdfTeX and luaTeX (HO
 )
-\BKM@id=\count415
+\BKM@id=\count422
 ))
 
 LaTeX template Info: Declaring instance 'basic' of type item on line 37.
@@ -1749,17 +1886,17 @@ Package hyperref Info: Link coloring OFF on input line 37.
 (C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/context/base/mkii/supp-pdf.mk
 ii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count416
-\scratchdimen=\dimen324
-\scratchbox=\box104
-\nofMPsegments=\count417
-\nofMParguments=\count418
-\everyMPshowfont=\toks39
-\MPscratchCnt=\count419
-\MPscratchDim=\dimen325
-\MPnumerator=\count420
-\makeMPintoPDFobject=\count421
-\everyMPtoPDFconversion=\toks40
+\scratchcounter=\count423
+\scratchdimen=\dimen338
+\scratchbox=\box105
+\nofMPsegments=\count424
+\nofMParguments=\count425
+\everyMPshowfont=\toks46
+\MPscratchCnt=\count426
+\MPscratchDim=\dimen339
+\MPnumerator=\count427
+\makeMPintoPDFobject=\count428
+\everyMPtoPDFconversion=\toks47
 )
 (C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/epstopdf-pkg/epstopdf-b
 ase.sty
@@ -1770,7 +1907,11 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 (C:/Users/forge/AppData/Local/Programs/MiKTeX/tex/latex/00miktex/epstopdf-sys.c
 fg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
-))<<sRGB.icc>>
+))
+Package pgfplots notification 'compat/show suggested version=true': document ha
+s been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
+
+<<sRGB.icc>>
 \g__math_luamml_iow=\write6
 
 \openout6 = Lecture-luamml-mathml.html
@@ -1856,36 +1997,36 @@ LaTeX template Info: Declaring instance 'std' of type header on line 157.
 
 ] [20
 
-]
-
-LaTeX template Info: Declaring instance 'std' of type header on line 183.
-
- [21
+] [21
 
 ]
 
-LaTeX template Info: Declaring instance 'std' of type header on line 205.
+LaTeX template Info: Declaring instance 'std' of type header on line 194.
 
-
-LaTeX template Info: Declaring instance 'std' of type header on line 207.
-
- (./Lecture.toc) [22
+ [22
 
 ]
 
-LaTeX template Info: Declaring instance 'std' of type header on line 207.
+LaTeX template Info: Declaring instance 'std' of type header on line 216.
 
- [23
+
+LaTeX template Info: Declaring instance 'std' of type header on line 218.
+
+ (./Lecture.toc) [23
+
+]
+
+LaTeX template Info: Declaring instance 'std' of type header on line 218.
+
+ [24
 
 ]
 LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <20.74> not available
-(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 243.
- [24
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 254.
+ [25
 
 
 warning  (pdf backend): pop empty color page stack 1
-] [25
-
 ] [26
 
 ] [27
@@ -1902,38 +2043,40 @@ warning  (pdf backend): pop empty color page stack 1
 
 ] [33
 
-]
-
-LaTeX template Info: Declaring instance 'std' of type header on line 281.
-
- (./Lecture.toc) [34
-
-]
-
-LaTeX template Info: Declaring instance 'std' of type header on line 281.
-
- [35
+] [34
 
 ]
 
 LaTeX template Info: Declaring instance 'std' of type header on line 292.
 
-
-(./Lecture.toc) [36
+ (./Lecture.toc) [35
 
 ]
 
 LaTeX template Info: Declaring instance 'std' of type header on line 292.
 
- [37
+ [36
 
-] [38
+]
+
+LaTeX template Info: Declaring instance 'std' of type header on line 303.
+
+
+(./Lecture.toc) [37
+
+]
+
+LaTeX template Info: Declaring instance 'std' of type header on line 303.
+
+ [38
 
 ] [39
 
 ] [40
 
 ] [41
+
+] [42
 
 ]
 \tf@toc=\write7
@@ -1965,8 +2108,8 @@ L3 programming layer <2026-03-20>
 
 
 Package tagpdf Info: Finalizing the tagging structure:
-(tagpdf)             Writing out ~702 structure objects
-(tagpdf)             with ~613 'MC' leaf nodes.
+(tagpdf)             Writing out ~718 structure objects
+(tagpdf)             with ~624 'MC' leaf nodes.
 (tagpdf)             Be patient if there are lots of objects!
 
 Package tagpdf Info: writing ParentTree
@@ -1979,16 +2122,16 @@ Package tagpdf Info: writing Root
 )
 
 Here is how much of LuaTeX's memory you used:
- 39339 strings out of 475900
- 125049,1977958 words of node,token memory allocated
+ 49770 strings out of 475900
+ 125049,2373549 words of node,token memory allocated
  622 words of node memory still in use:
    7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 2 glyph, 42 attribute, 58 glue_spec
 , 13 attribute_list, 3 write nodes
-   avail lists: 1:9,2:2193,3:385,4:124,5:226,6:58,7:2140,8:23,9:347,10:24,11:178
+   avail lists: 1:9,2:2189,3:385,4:125,5:226,6:58,7:2138,8:23,9:347,10:24,11:178
 
- 60688 multiletter control sequences out of 65536+600000
- 66 fonts using 30903463 bytes
- 102i,11n,108p,460b,837s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 70872 multiletter control sequences out of 65536+600000
+ 66 fonts using 30903479 bytes
+ 109i,11n,108p,758b,837s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/users/forge/appdata/local/programs/miktex/fonts/opentype/public/lm/lmmono12-
 regular.otf><c:/users/forge/appdata/local/programs/miktex/fonts/opentype/public/
 lm/lmmonolt10-bold.otf><c:/users/forge/appdata/local/programs/miktex/fonts/opent
@@ -2001,9 +2144,9 @@ ge/appdata/local/programs/miktex/fonts/opentype/public/lm/lmmono10-regular.otf><
 c:/users/forge/appdata/local/programs/miktex/fonts/opentype/public/newcomputermo
 dern/newcmsans10-bold.otf><c:/users/forge/appdata/local/programs/miktex/fonts/op
 entype/public/newcomputermodern/newcmsans10-regular.otf>
-Output written on Lecture.pdf (41 pages, 2124357 bytes).
+Output written on Lecture.pdf (42 pages, 2127881 bytes).
 
-PDF statistics: 1381 PDF objects out of 1440 (max. 8388607)
- 137 named destinations out of 1000 (max. 1048576)
- 4172 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 1402 PDF objects out of 1440 (max. 8388607)
+ 138 named destinations out of 1000 (max. 1048576)
+ 4252 words of extra memory for PDF output out of 10000 (max. 100000000)
 
