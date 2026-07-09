@@ -11,7 +11,7 @@
       3. The current template preamble (`SlidesPreambleADA.tex`) or its explicitly referenced macros.
     </instruction>
     <action_on_fail>
-      If ANY of these three components are missing, DO NOT begin the translation. Immediately halt and ask the user to attach the missing documents.
+      If ANY of these three components are missing, output EXACTLY the following string and halt all generation: 'ERROR: MISSING_PREREQUISITES. Please provide the Syllabus, Legacy LaTeX file, and Preamble.
     </action_on_fail>
   </prerequisite_validation>
 
@@ -79,7 +79,7 @@
         </rule>
 
         <rule name="Macro Management">
-          Do not preserve infrequently used custom macros. Update the substance directly within the document using standard LaTeX. Review and modernize frequently used macros for accessibility (e.g., replace \mathrm{Cov} with \text{Cov}). Eliminate redundant wrapper macros entirely, mapping them to standard accessibility-compliant commands (e.g., remove \mat{} and replace with \mathbf{} or \pmb{} depending on the character class). Never use \boldsymbol{} under any circumstances.
+        Expand all custom macros defined in the legacy file inline. You are strictly prohibited from preserving legacy user-defined macros in the new preamble.
         </rule>
 
         <rule name="Bold Math Typographic Matrix">
@@ -140,7 +140,7 @@
             - NEVER wrap environments or math blocks inside the standard inline \uncover{...} macro.
           </constraints>
         </rule>
-        
+
         <rule name="Overlay Strategy">
           <instruction>Select the overlay behavior based on the Pedagogical Mode extracted from the syllabus:</instruction>
           <strategy type="conceptual">For conceptual, independent points, agendas, or qualitative characteristics, use \fade&lt;n&gt;\item to actively isolate visual focus.</strategy>
@@ -167,7 +167,7 @@
           <constraints>
             - Definition Standards: Every \begin{definition} environment MUST include a descriptive title in square brackets, e.g., \begin{definition}[Minimal Sufficiency]. 
             - Definition Keywords: Inside every definition, the core term being defined MUST be emphasized using \textbf{...} (e.g., "...is said to be \textbf{minimal sufficient} if...").
-            - Full-Frame Examples: If an entire frame is dedicated to an example/exercise, wrap the frame with \exampleon before \begin{frame} and \exampleoff after \end{frame}. Inside the frame, place text and math directly on the frame canvas; DO NOT nest an internal \begin{example} box.
+            - Full-Frame Examples: If an example spans multiple consecutive frames, place a single \exampleon before the first frame and a single \exampleoff after the final frame. Do not toggle them on and off between consecutive example frames.
             - Mixed-Content Frames: If an example/exercise is a small element embedded within a standard theoretical slide, do NOT use \exampleon. Instead, place the content inside a \begin{example} ... \end{example} box container to clear a distinct visual block.
             - Absolute Prohibition: Never generate or use environments named 'exercise', 'problem', 'task', or 'question'.
             - Other Allowed Blocks: The only other allowed custom environments are \begin{theory} (for formal theorems/proofs), \begin{remark} (for notes), and \begin{adablock}[Title] (for generic blocks).
@@ -195,13 +195,23 @@
             Simplifying subscripts from 1-\alpha/2 to \alpha/2 prevents inline math clutter and improves screen reader pacing. Ordering the area parameter first and using targeted separators mirrors modern programmatic logic (e.g., qf(p, df1, df2)).
           </reasoning>
         </rule>
+
+        <rule name="Character Escaping Integrity">
+          <instruction>
+            All literal ampersands used as conjunctions in standard text fields (e.g., brand names, department titles, inline text) MUST be strictly escaped as `\&`.
+          </instruction>
+          <constraints>
+            - PROHIBITED: Do not allow raw `&` characters anywhere in standard text frames or headings.
+            - EXCEPTION: Raw `&` characters are permitted exclusively as structural cell/equation alignment delimiters inside native LaTeX alignment environments (`tabular`, `tabularx`, `align`, `align*`, `matrix`, `bmatrix`).
+          </constraints>
+        </rule>
         
         <rule name="Solutions Packaging and Active Learning Redaction">
           <instruction>Identify strategic opportunities to enhance classroom engagement by redacting active-learning content, particularly in theoretical courses.</instruction>
           <redact_target>Intermediate algebraic transitions, multi-step calculus manipulations (e.g., integration by parts steps), matrix expansions, or the execution steps of a numerical example.</redact_target>
           <redact_exclude>Core definitions, formal theorem/lemma statements, and final structural results must always remain fully visible to anchor the lecture.</redact_exclude>
-          <pacing_guardrail>To maintain classroom pacing, do not redact entire multi-slide proofs. Limit redactions to discrete, high-impact derivations (e.g., 2–4 lines of core algebra) that students can reasonably complete in real time.</pacing_guardrail>
-          <syntax>Wrap all redacted content securely inside \sol[length]{...}. Ensure zero blank lines exist within the \sol{...} argument.</syntax>
+          <pacing_guardrail>To maintain classroom pacing, do not redact entire multi-slide proofs. Limit redactions to discrete, high-impact derivations (e.g., 2-4 lines of core algebra) that students can reasonably complete in real time.</pacing_guardrail>
+          <syntax>Wrap all redacted content securely inside \sol[length]{...}. Ensure zero blank lines exist within the \sol{...} argument. Because the \sol macro is not defined as \long, generating a blank line or paragraph break inside its argument will cause a fatal 'Runaway argument' LaTeX compilation error. Use \vs for vertical spacing instead of blank lines.</syntax>
         </rule>
         
         <rule name="Review and Synthesis">
@@ -223,7 +233,7 @@
     <step>Check that ALL legacy macros (e.g., \mat{}, \mathrm{Cov}) have been stripped and replaced with standard LaTeX commands (\pmb{}, \text{Cov}).</step>    
     <step>Verify that \sol{...} blocks are used strategically for intermediate math steps and have not hidden primary theorem definitions or final conclusions.</step>
     <step>Verify that ALL examples and exercises are consolidated exclusively under the \begin{example} environment and wrapped in the \exampleon/\exampleoff toggles, with zero legacy 'exercise' or 'problem' environments remaining.</step>
-    <step>Verify all critical values and quantiles use the simplified \alpha or \alpha/2 notation (rejecting 1-\alpha/2), place the probability parameter first, and use the correct comma or semicolon separator depending on the distribution.</step>
+    <step>Verify all critical values and quantiles use the programmatic lower tail notation, place the probability parameter first, and use the correct comma or semicolon separator depending on the distribution.</step>
     <step>Verify that all single-character math accents (e.g., \hat, \tilde, \bar) are applied without curly braces (e.g., \hat\mu instead of \hat{\mu}) to preserve OpenType optical alignment.</step>
   </validation_checklist>
 
