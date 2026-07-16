@@ -66,9 +66,9 @@
       <instruction>
         Generate a new Objectives slide by synthesizing the extracted syllabus SLOs, the technical scope of the legacy file, and any preexisting objectives found in the legacy slides.
       </instruction>
-      <step>Use preexisting objectives as a primary reference for lecture-specific scope, but structurally upgrade them to use precise action verbs (e.g., Derive, Prove, Evaluate) mapped to the syllabus's pedagogical depth.</step>
+      <step>Use preexisting objectives as a primary reference for lecture-specific scope, but structurally upgrade them to strictly adhere to Bloom's Taxonomy. Ensure you use precise, measurable action verbs (e.g., Derive, Prove, Evaluate, Calculate) mapped correctly to the syllabus's pedagogical depth.</step>
       <step>Section name MUST be exactly \section{Objectives}. Frame title MUST be exactly \frametitle{Objectives}. DO NOT use the word "Lecture" in either.</step>
-      <step>Format strictly as: \fade&lt;1&gt;\item \textbf{[Action Verb]} [Objective...].</step>
+      <step>Format strictly as: \fade<1>\item \textbf{[Bloom's Action Verb]} [Objective...].</step>
     </phase>
 
     <phase id="3" name="Content Migration and ADA Compliance">
@@ -106,17 +106,20 @@
           </reasoning>
         </rule>
 
-        <rule name="Semantic Term Replacement">
+        <rule name="Semantic Term Replacement and mbox Deprecation">
           <instruction>
-            Strictly prohibit the use of \mathrm{} for abbreviated natural language functions or operators. 
-            Global substitution is mandatory for the following:
+            Strictly prohibit the use of \mathrm{} and the antiquated \mbox{} command. You must globally substitute these based on their context.
+          </instruction>
+          <constraints>
             - Replace \mathrm{MSE} with \text{MSE}
             - Replace \mathrm{SE} with \text{SE}
             - Replace \mathrm{eff} with \text{eff}
             - Replace \mathrm{Cov} with \text{Cov}
-          </instruction>
+            - Prose in Math: If \mbox{} contains standard English words or phrases inside an equation, replace it with \text{}.
+            - Math Operators: If \mbox{} contains a mathematical operator, function, or semantic label, replace it with \operatorname{} or \text{} as appropriate to ensure semantic screen reader tagging.
+          </constraints>
           <reasoning>
-            \text{} is required for semantic screen reader tagging, whereas \mathrm{} incorrectly classifies these as mathematical variables, breaking accessibility compliance.
+            \text{} and \operatorname{} are required for correct MathML semantic tagging. \mathrm{} and \mbox{} incorrectly classify these elements or break logical reading order, failing ADA compliance.
           </reasoning>
         </rule>
 
@@ -176,7 +179,7 @@
           <constraints>
             - Definition Standards: Every \begin{definition} environment MUST include a descriptive title in square brackets, e.g., \begin{definition}[Minimal Sufficiency]. 
             - Definition Keywords: Inside every definition, the core term being defined MUST be emphasized using \textbf{...} (e.g., "...is said to be \textbf{minimal sufficient} if...").
-            - Full-Frame Examples: If an example spans multiple consecutive frames, place a single \exampleon before the first frame and a single \exampleoff after the final frame. Do not toggle them on and off between consecutive example frames.
+            - Full-Frame Examples: If an example spans a complete frame or multiple consecutive frames, place a single \exampleon before the first frame and a single \exampleoff after the final frame. Do not toggle them on and off between consecutive example frames.
             - Mixed-Content Frames: If an example/exercise is a small element embedded within a standard theoretical slide, do NOT use \exampleon. Instead, place the content inside a \begin{example} ... \end{example} box container to clear a distinct visual block.
             - Absolute Prohibition: Never generate or use environments named 'exercise', 'problem', 'task', or 'question'.
             - Other Allowed Blocks: The only other allowed custom environments are \begin{theory} (for formal theorems/proofs), \begin{remark} (for notes), and \begin{adablock}[Title] (for generic blocks).
@@ -214,6 +217,18 @@
             - EXCEPTION: Raw `&` characters are permitted exclusively as structural cell/equation alignment delimiters inside native LaTeX alignment environments (`tabular`, `tabularx`, `align`, `align*`, `matrix`, `bmatrix`).
           </constraints>
         </rule>
+
+        <rule name="Hypothesis Notation Standardization">
+          <instruction>
+            Standardize all references to the null and alternative hypotheses to ensure consistent MathML tagging and visual uniformity.
+          </instruction>
+          <constraints>
+            - Prohibited: Never use legacy text-subscripting or mixed modes (e.g., prohibit H\textsubscript{0}, H$_0$, H_a, H\textsubscript{a}).
+            - Mandatory: You must format the null hypothesis strictly as the math-mode token $H_0$.
+            - Mandatory: You must format the alternative hypothesis strictly as the math-mode token $H_a$.
+            - Ensure these are wrapped in math delimiters whether they appear inline or in display equations.
+          </constraints>
+        </rule>
         
         <rule name="Solutions Packaging and Active Learning Redaction">
           <instruction>Identify strategic opportunities to enhance classroom engagement by redacting active-learning content, particularly in theoretical courses.</instruction>
@@ -241,7 +256,7 @@
     <step>Verify overlay logic correctly matches the pedagogical mode (fading vs. standard reveals).</step>
     <step>Check that ALL legacy macros (e.g., \mat{}, \mathrm{Cov}) have been stripped and replaced with standard LaTeX commands (\pmb{}, \text{Cov}).</step>    
     <step>Verify that \sol{...} blocks are used strategically for intermediate math steps and have not hidden primary theorem definitions or final conclusions.</step>
-    <step>Verify that ALL examples and exercises are consolidated exclusively under the \begin{example} environment and wrapped in the \exampleon/\exampleoff toggles, with zero legacy 'exercise' or 'problem' environments remaining.</step>
+    <step>Verify that ALL examples and exercises are consolidated exclusively under the \begin{example} environment or wrapped in the \exampleon/\exampleoff toggles, with zero legacy 'exercise' or 'problem' environments remaining.</step>
     <step>Verify all critical values and quantiles use the programmatic lower tail notation, place the probability parameter first, and use the correct comma or semicolon separator depending on the distribution.</step>
     <step>Verify that all single-character math accents (e.g., \hat, \tilde, \bar) are applied without curly braces (e.g., \hat\mu instead of \hat{\mu}) to preserve OpenType optical alignment.</step>
   </validation_checklist>
