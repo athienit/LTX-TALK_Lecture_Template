@@ -104,6 +104,17 @@
           </constraints>
         </rule>
         
+        <rule name="Distribution Notation Standard">
+          <instruction>Standardize the notation for probability distributions to ensure semantic accuracy and visual consistency.</instruction>
+          <constraints>
+            - Normal Distribution: You MUST use an italicized math-mode $N$ without any text wrappers (e.g., use $N(0,1)$ or $N(\mu, \sigma^2)$). NEVER use \text{N}, \mathrm{N}, or \mbox{N}.
+            - Other Distributions: For all other named distributions (e.g., Binomial, Exponential, Poisson), you MUST use \text{} (e.g., \text{Binomial}(n, p) or \text{Exp}(\lambda)).
+          </constraints>
+          <reasoning>
+            The Normal distribution symbol 'N' is mathematically treated as a function with two arguments. However, multi-letter distribution abbreviations (like 'Bin' or 'Exp') require \text{} so the LaTeX engine does not incorrectly parse and kern them as the product of individual variables (e.g., B * i * n).
+          </reasoning>
+        </rule>
+        
         <rule name="Hypothesis Notation Standardization">
           <instruction>Standardize all references to the null and alternative hypotheses to ensure consistent MathML tagging.</instruction>
           <constraints>
@@ -137,8 +148,8 @@
             - General Padding: Every custom block environment (e.g., \begin{theory}, \begin{example}) MUST start on a new line and MUST be preceded by exactly one blank line. Never jam an environment directly against preceding text.
             - Uncoverenv Separation: When placing consecutive \begin{uncoverenv} ... \end{uncoverenv} blocks containing custom environments, you MUST place exactly one completely blank line between the \end{uncoverenv} of the first and the \begin{uncoverenv} of the second. Never place them on adjacent lines.
             - Prohibit Tail Spacing: NEVER append `\vspace{...}` or `\vs` at the end of an environment or math alignments. 
-            - \vs Execution: ALWAYS insert `\vs` directly after a plain text label/title that precedes a list. After every instance of the `\vs` command, you MUST include a blank line in the source code before beginning the next block of text.
-          </constraints>
+            - List Spacing Prohibition: NEVER use `\vs` or `\vspace` inside `itemize` or `enumerate` environments. List items must follow one another directly.
+            - \vs Execution: Outside of lists, ALWAYS place `\vs` on a new line immediately following the preceding text with NO blank line before it. You MUST then include exactly one completely blank line immediately after the `\vs` command before beginning the next block or list.
         </rule>
         
         <rule name="Semantic Blocks and Active Learning Consolidation">
@@ -181,7 +192,7 @@
           <constraints>
             - Objective Mapping: Bullet points must directly synthesize and map back to the Bloom's Taxonomy action verbs established in Phase 2.
             - Format Mandate: Use the format: \fade<n>\item \textbf{[Bloom's Action Verb Concept]:} [Concise summary].
-            - Spacing Mandate: Insert a `\vs` command, followed by a completely blank line in the source code, between each list item.
+            - Spacing Mandate: You must NOT use `\vs` or `\vspace` between the list items. Rely strictly on the document class's native list spacing.          
           </constraints>
         </rule>
       </rules>
@@ -199,9 +210,9 @@
     <step>Verify syllabus context was successfully parsed and applied.</step>
     <step>Verify \date{} is completely empty.</step>
     <step>Verify objectives use exactly \section{Objectives} and \frametitle{Objectives}, and that verbs comply with Bloom's Taxonomy.</step>
-    <step>Ensure ZERO instances of \vspace or \vs exist at the tail end of blocks, and that \vs is always followed by a blank line.</step>
-    <step>Verify exactly one blank line exists between consecutive `uncoverenv` wrappers to protect vertical rule rendering.</step>
+    <step>Ensure ZERO instances of \vspace or \vs exist inside list environments (itemize/enumerate) or at the tail end of blocks. Verify that \vs (when used outside lists) is placed on a new line with NO preceding blank line, but followed by exactly one blank line.</step>    <step>Verify exactly one blank line exists between consecutive `uncoverenv` wrappers to protect vertical rule rendering.</step>
     <step>Verify hypothesis notation strictly uses the math tokens $H_0$ and $H_a$.</step>
+    <step>Verify the Normal distribution uses an italicized math-mode $N$ (e.g., $N(0,1)$), while other named distributions use \text{} (e.g., \text{Bin}(n,p)).</step>
     <step>Check that all text-based ampersands (&amp;) and percent signs (\%) are properly escaped as \&amp; and \%.</step>
     <step>Verify \caption{} is completely absent, and all tables use booktabs and header-rows={1}.</step>
     <step>Ensure list integrity is intact: itemize and enumerate environments must be contiguous around display math blocks.</step>
