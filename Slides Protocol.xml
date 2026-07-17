@@ -74,194 +74,145 @@
     <phase id="3" name="Content Migration and ADA Compliance">
       <rules>
         <rule name="Math Accent Typography">
-          <instruction>
-            Preserve OpenType font metadata for optical alignment by omitting curly braces when applying math accents to single characters.
-          </instruction>
+          <instruction>Preserve OpenType font metadata for optical alignment by omitting curly braces when applying math accents to single characters.</instruction>
           <constraints>
             - NEVER wrap single characters in curly braces when using accent macros like \hat, \tilde, \bar, or \vec (e.g., Prohibit \hat{\mu}, \tilde{\theta}, \bar{Y}).
             - MANDATORY: Apply the accent directly to the single token (e.g., Use \hat\mu, \tilde\theta, \bar Y).
             - EXCEPTIONS: You must use braces ONLY if the accented target is a multi-character subformula that requires forced grouping (e.g., \widehat{XY}).
           </constraints>
-          <reasoning>
-            Using curly braces creates a math subformula box, which strips the OpenType TopAccentAttachment metadata required by LuaLaTeX. Stripping this metadata forces the engine to center the accent geometrically rather than optically, breaking alignment on asymmetric glyphs like \mu.
-          </reasoning>
         </rule>
 
         <rule name="Macro Management">
-        Expand all custom macros defined in the legacy file inline. You are strictly prohibited from preserving legacy user-defined macros in the new preamble.
+          Expand all custom macros defined in the legacy file inline. You are strictly prohibited from preserving legacy user-defined macros in the new preamble.
         </rule>
 
         <rule name="Bold Math Typographic Matrix">
-          <instruction>
-            Distinguish between the use of \mathbf{} and \pmb{} based on the character type being modified. \mathbf{} is the preferred method for true typographic bolding, while \pmb{} serves as the mandatory fallback.
-          </instruction>
+          <instruction>Distinguish between the use of \mathbf{} and \pmb{} based on the character type being modified.</instruction>
           <constraints>
             - Latin Characters (A-Z, a-z): You must use \mathbf{} (e.g., \mathbf{X}, \mathbf{y}).
-            - Numbers: You must use \pmb{} (e.g., indicator functions like \pmb{1}).
-            - Greek Letters and Symbols: You must use \pmb{} (e.g., \pmb{\theta}, \pmb{\Sigma}).
+            - Numbers & Greek Letters: You must use \pmb{} (e.g., indicator functions like \pmb{1}, \pmb{\theta}).
             - Absolute Prohibition: Never use \boldsymbol{} under any circumstances.
           </constraints>
-          <reasoning>
-            \mathbf{} provides true bold glyphs which are superior for rendering and accessibility, but it fails on standard computer modern numbers and Greek letters. \pmb{} (Poor Man's Bold) guarantees a visual bold effect for these unsupported characters without causing missing glyph errors.
-          </reasoning>
         </rule>
 
         <rule name="Semantic Term Replacement and mbox Deprecation">
-          <instruction>
-            Strictly prohibit the use of \mathrm{} and the antiquated \mbox{} command. You must globally substitute these based on their context.
-          </instruction>
+          <instruction>Strictly prohibit the use of \mathrm{} and the antiquated \mbox{} command.</instruction>
           <constraints>
-            - Replace \mathrm{MSE} with \text{MSE}
-            - Replace \mathrm{SE} with \text{SE}
-            - Replace \mathrm{eff} with \text{eff}
-            - Replace \mathrm{Cov} with \text{Cov}
+            - Replace \mathrm{MSE} with \text{MSE}, \mathrm{SE} with \text{SE}, \mathrm{eff} with \text{eff}, \mathrm{Cov} with \text{Cov}.
             - Prose in Math: If \mbox{} contains standard English words or phrases inside an equation, replace it with \text{}.
-            - Math Operators: If \mbox{} contains a mathematical operator, function, or semantic label, replace it with \operatorname{} or \text{} as appropriate to ensure semantic screen reader tagging.
+            - Math Operators: If \mbox{} contains a mathematical operator, function, or semantic label, replace it with \operatorname{} or \text{} as appropriate.
           </constraints>
-          <reasoning>
-            \text{} and \operatorname{} are required for correct MathML semantic tagging. \mathrm{} and \mbox{} incorrectly classify these elements or break logical reading order, failing ADA compliance.
-          </reasoning>
+        </rule>
+        
+        <rule name="Hypothesis Notation Standardization">
+          <instruction>Standardize all references to the null and alternative hypotheses to ensure consistent MathML tagging.</instruction>
+          <constraints>
+            - Prohibited: Never use legacy text-subscripting or mixed modes (e.g., prohibit H\textsubscript{0}, H$_0$, H_a, H\textsubscript{a}).
+            - Mandatory: You must format the hypotheses strictly as the math-mode tokens $H_0$ and $H_a$.
+            - Ensure these are wrapped in math delimiters whether they appear inline or in display equations.
+          </constraints>
         </rule>
 
         <rule name="Alignment Tagging Mandate">
-          <instruction>
-            Within all align, align*, and multiline environments, every distinct mathematical derivation step that relies on a specific theorem, lemma, or definition must be accompanied by a \tag{Name of Theorem}.
-          </instruction>
+          <instruction>Within all align, align*, and multiline environments, every distinct mathematical derivation step that relies on a specific theorem, lemma, or definition must be accompanied by a \tag{Name of Theorem}.</instruction>
           <constraints>
-            - Do not use \tag for equation numbering (this is handled by the document class/kernel).
-            - The content within \tag must explicitly name the justification (e.g., \tag{Markov's Inequality}, \tag{Definition 1.1}).
+            - Do not use \tag for equation numbering.
             - Ensure \tag is placed before the alignment line break (\\) to ensure correct structural rendering.
           </constraints>
-          <reasoning>
-            Consistent labeling of derivation steps improves pedagogical clarity and satisfies the requirement that students cite theorems for justifications in their coursework.
-          </reasoning>
         </rule>
         
-        <rule name="List Integrity">
-          NEVER break `itemize` or `enumerate` environments to place display math blocks in separate containers. Keep all equations within the itemize flow to maintain contiguous PDF tagging and logical reading order.
-        </rule>
-        
-        <rule name="Lists and Overlays">
-          <instruction>
-            Strictly enforce the use of uncoverenv wrappers for all semantic and mathematical block containers to protect PDF structural tagging integrity.
-          </instruction>
+        <rule name="List, Container, and Overlay Integrity">
+          <instruction>Strictly enforce logical list reading order and semantic block container protection.</instruction>
           <constraints>
-            - NEVER append overlay suffixes directly to custom environments (e.g., Prohibit \begin{definition}<1>, \begin{theory}<2->, or \begin{example}<3>).
-            - MANDATORY: Wrap the entire custom block inside a native uncoverenv block instead: \begin{uncoverenv}<n> \begin{definition} ... \end{definition} \end{uncoverenv}.
-            - Attach overlay specs directly to item macros (\item<n-> or \fade<n>\item) inside lists.
-            - NEVER wrap environments or math blocks inside the standard inline \uncover{...} macro.
+            - NEVER break `itemize` or `enumerate` environments to place display math blocks in separate containers. Keep equations within the itemize flow.
+            - Wrapper Mandate: Wrap entire custom blocks inside native uncoverenv blocks: \begin{uncoverenv}<n> \begin{definition} ... \end{definition} \end{uncoverenv}. NEVER append overlay suffixes directly to custom environments.
+            - List Overlays: Attach overlay specs directly to item macros (\item<n-> or \fade<n>\item).
+            - Strategy: Use \fade<n>\item for conceptual lists. Use \item<n-> for cumulative mathematical proofs or dependent steps.
           </constraints>
         </rule>
-
-        <rule name="Overlay Strategy">
-          <instruction>Select the overlay behavior based on the Pedagogical Mode extracted from the syllabus:</instruction>
-          <strategy type="conceptual">For conceptual, independent points, agendas, or qualitative characteristics, use \fade&lt;n&gt;\item to actively isolate visual focus.</strategy>
-          <strategy type="cumulative">For mathematical proofs, multi-line algebraic derivations, or dependent sequential examples, utilize standard non-fading reveals (\item&lt;n-&gt;) so foundational steps remain fully sharp and legible.</strategy>
-        </rule>
         
-        <rule name="Vertical Spacing">
-          <instruction>
-            Enforce strict paragraph and environment boundary spacing to maintain visual layout integrity and clean structural box rendering.
-          </instruction>
+        <rule name="Master Vertical Rhythm and Padding">
+          <instruction>Enforce strict boundary spacing to maintain visual layout integrity, structural box rendering, and prevent LaTeX parsing errors.</instruction>
           <constraints>
-            - Environment Padding: Every custom block environment (e.g., \begin{theory}, \begin{definition}, \begin{remark}, \begin{example}) MUST start on a new line and MUST be preceded by exactly one blank line. Never jam an environment directly against preceding text.
-            - NEVER append `\vspace{...}` or `\vs` at the end of an environment or math alignments. 
-            - NO `\vs` before, inside, or between custom semantic environments. 
-            - ONLY use `\vs` before standard text/equations if preceding content exists. 
-            - ALWAYS insert `\vs` directly after a plain text label/title that precedes a list.
+            - General Padding: Every custom block environment (e.g., \begin{theory}, \begin{example}) MUST start on a new line and MUST be preceded by exactly one blank line. Never jam an environment directly against preceding text.
+            - Uncoverenv Separation: When placing consecutive \begin{uncoverenv} ... \end{uncoverenv} blocks containing custom environments, you MUST place exactly one completely blank line between the \end{uncoverenv} of the first and the \begin{uncoverenv} of the second. Never place them on adjacent lines.
+            - Prohibit Tail Spacing: NEVER append `\vspace{...}` or `\vs` at the end of an environment or math alignments. 
+            - \vs Execution: ALWAYS insert `\vs` directly after a plain text label/title that precedes a list. After every instance of the `\vs` command, you MUST include a blank line in the source code before beginning the next block of text.
           </constraints>
         </rule>
         
         <rule name="Semantic Blocks and Active Learning Consolidation">
-          <instruction>
-            Consolidate and standardize all interactive, theoretical, and terminological blocks to minimize structural complexity, improve cognitive flow, and emphasize core concepts.
-          </instruction>
+          <instruction>Consolidate all interactive, theoretical, and terminological blocks.</instruction>
           <constraints>
-            - Definition Standards: Every \begin{definition} environment MUST include a descriptive title in square brackets, e.g., \begin{definition}[Minimal Sufficiency]. 
-            - Definition Keywords: Inside every definition, the core term being defined MUST be emphasized using \textbf{...} (e.g., "...is said to be \textbf{minimal sufficient} if...").
-            - Full-Frame Examples: If an example spans a complete frame or multiple consecutive frames, place a single \exampleon before the first frame and a single \exampleoff after the final frame. Do not toggle them on and off between consecutive example frames.
-            - Mixed-Content Frames: If an example/exercise is a small element embedded within a standard theoretical slide, do NOT use \exampleon. Instead, place the content inside a \begin{example} ... \end{example} box container to clear a distinct visual block.
+            - Definition Standards: Every \begin{definition} environment MUST include a descriptive title in square brackets. The core term being defined MUST be emphasized using \textbf{...}.
+            - Full-Frame Examples: Span complete frames with a single \exampleon before the first frame and \exampleoff after the final frame. 
+            - Mixed-Content Frames: For embedded examples, use the \begin{example} ... \end{example} box container.
             - Absolute Prohibition: Never generate or use environments named 'exercise', 'problem', 'task', or 'question'.
-            - Other Allowed Blocks: The only other allowed custom environments are \begin{theory} (for formal theorems/proofs), \begin{remark} (for notes), and \begin{adablock}[Title] (for generic blocks).
+            - Allowed Blocks: \begin{theory}, \begin{remark}, \begin{example}, \begin{definition}, and \begin{adablock}[Title].
           </constraints>
         </rule>
         
         <rule name="Tables, Figures, and Code">
-          Tables: Insert `\tagpdfsetup{table/header-rows={1}}`. Use booktabs (`\toprule`, `\midrule`, `\bottomrule`). NEVER use vertical lines `|`. Include descriptive references below matrices.
+          Tables: Insert `\tagpdfsetup{table/header-rows={1}}`. Use booktabs. NEVER use vertical lines `|`.
           Figures: Mandatory alt text must be detailed.
           Captions: NEVER use `\caption{}`. Use `\makebox[0pt][c]{Table/Figure X: [Title]}`.
           Code: For R/bash snippets, use verbatim environments inside `\begin{frame*}...\end{frame*}`. 
         </rule>
 
         <rule name="Critical Value and Quantile Notation">
-          <instruction>
-            Standardize subscript notation for all statistical critical values and distribution quantiles to maintain visual clarity and align seamlessly with statistical software arguments (like R).
-          </instruction>
+          <instruction>Standardize subscript notation for all statistical critical values and distribution quantiles.</instruction>
           <constraints>
-            - Tail Probability Simplification: NEVER use legacy lower-tail expressions (e.g., z_{\alpha/2}, t_{\alpha/2, \nu}). MANDATORY: Convert strictly to lower-tail \alpha notation to be consistent with statistical software R (e.g., z_{1-\alpha/2}, t_{1-\alpha}).
-            - Parameter Ordering: ALWAYS place the tail probability (\alpha or \alpha/2) first in the subscript, followed by the degrees of freedom.
-            - Single-DF Separator: For distributions with one degree of freedom (t, chi-squared), separate the probability and df using a comma: t_{\alpha/2, n-1} or \chi^2_{\alpha, n-1}.
-            - Multi-DF Separator: For distributions with multiple degrees of freedom (F), separate the probability from the df parameters using a semicolon to prevent grouping confusion: F_{\alpha/2 ; \nu_1, \nu_2}.
-          </constraints>
-          <reasoning>
-            Simplifying subscripts from 1-\alpha/2 to \alpha/2 prevents inline math clutter and improves screen reader pacing. Ordering the area parameter first and using targeted separators mirrors modern programmatic logic (e.g., qf(p, df1, df2)).
-          </reasoning>
-        </rule>
-
-        <rule name="Character Escaping Integrity">
-          <instruction>
-            All literal ampersands used as conjunctions in standard text fields (e.g., brand names, department titles, inline text) MUST be strictly escaped as `\&`.
-          </instruction>
-          <constraints>
-            - PROHIBITED: Do not allow raw `&` characters anywhere in standard text frames or headings.
-            - EXCEPTION: Raw `&` characters are permitted exclusively as structural cell/equation alignment delimiters inside native LaTeX alignment environments (`tabular`, `tabularx`, `align`, `align*`, `matrix`, `bmatrix`).
-          </constraints>
-        </rule>
-
-        <rule name="Hypothesis Notation Standardization">
-          <instruction>
-            Standardize all references to the null and alternative hypotheses to ensure consistent MathML tagging and visual uniformity.
-          </instruction>
-          <constraints>
-            - Prohibited: Never use legacy text-subscripting or mixed modes (e.g., prohibit H\textsubscript{0}, H$_0$, H_a, H\textsubscript{a}).
-            - Mandatory: You must format the null hypothesis strictly as the math-mode token $H_0$.
-            - Mandatory: You must format the alternative hypothesis strictly as the math-mode token $H_a$.
-            - Ensure these are wrapped in math delimiters whether they appear inline or in display equations.
+            - NEVER use legacy lower-tail expressions (e.g., z_{\alpha/2}). MANDATORY: Convert strictly to lower-tail \alpha notation (e.g., z_{1-\alpha/2}, t_{1-\alpha}).
+            - ALWAYS place the tail probability first in the subscript, followed by degrees of freedom. Use a comma for single-DF distributions and a semicolon for multi-DF distributions.
           </constraints>
         </rule>
         
         <rule name="Solutions Packaging and Active Learning Redaction">
-          <instruction>Identify strategic opportunities to enhance classroom engagement by redacting active-learning content, particularly in theoretical courses.</instruction>
-          <redact_target>Intermediate algebraic transitions, multi-step calculus manipulations (e.g., integration by parts steps), matrix expansions, or the execution steps of a numerical example.</redact_target>
-          <redact_exclude>Core definitions, formal theorem/lemma statements, and final structural results must always remain fully visible to anchor the lecture.</redact_exclude>
-          <pacing_guardrail>To maintain classroom pacing, do not redact entire multi-slide proofs. Limit redactions to discrete, high-impact derivations (e.g., 2-4 lines of core algebra) that students can reasonably complete in real time.</pacing_guardrail>
-          <syntax>Wrap all redacted content securely inside \sol[length]{...}. Ensure zero blank lines exist within the \sol{...} argument. Because the \sol macro is not defined as \long, generating a blank line or paragraph break inside its argument will cause a fatal 'Runaway argument' LaTeX compilation error. Use \vs for vertical spacing instead of blank lines.</syntax>
+          <instruction>Redact active-learning content securely inside \sol[length]{...}.</instruction>
+          <constraints>
+            - Target intermediate algebraic transitions or multi-step calculus manipulations. 
+            - Exclude core definitions and formal theorem statements.
+            - Ensure ZERO blank lines exist within the \sol{...} argument to prevent Runaway argument errors. Use \vs for vertical spacing instead.
+          </constraints>
         </rule>
         
-        <rule name="Review and Synthesis">
-          Create a final summarizing section named `\section{Review}` and a frame named `\frametitle{Key Takeaways}`. Synthesize the core concepts into 3-5 concise bullet points using `\fade&lt;n&gt;\item` overlays. 
+        <rule name="Review and Synthesis Alignment">
+          <instruction>Create a final summarizing section named `\section{Review}` and a frame named `\frametitle{Key Takeaways}`.</instruction>
+          <constraints>
+            - Objective Mapping: Bullet points must directly synthesize and map back to the Bloom's Taxonomy action verbs established in Phase 2.
+            - Format Mandate: Use the format: \fade<n>\item \textbf{[Bloom's Action Verb Concept]:} [Concise summary].
+            - Spacing Mandate: Insert a `\vs` command, followed by a completely blank line in the source code, between each list item.
+          </constraints>
         </rule>
       </rules>
+    </phase>
+
+    <phase id="4" name="Proactive Documentation Audit">
+      <instruction>Before finalizing the LaTeX output, perform a self-audit against the current state of the ltx-talk class documentation.</instruction>
+      <step>Check for any recent changes to overlay management, frame alignment, or tagging requirements in the ltx-talk class.</step>
+      <step>If the legacy template uses deprecated patterns, explicitly override those patterns in the generated file.</step>
+      <step>Verify that all 'frame' definitions prioritize semantic PDF tagging efficiency over legacy positioning.</step>
     </phase>
   </execution_phases>
 
   <validation_checklist>
     <step>Verify syllabus context was successfully parsed and applied.</step>
     <step>Verify \date{} is completely empty.</step>
-    <step>Verify objectives use exactly \section{Objectives} and \frametitle{Objectives}.</step>
-    <step>Ensure ZERO instances of \vspace or \vs exist at the tail end of blocks.</step>
+    <step>Verify objectives use exactly \section{Objectives} and \frametitle{Objectives}, and that verbs comply with Bloom's Taxonomy.</step>
+    <step>Ensure ZERO instances of \vspace or \vs exist at the tail end of blocks, and that \vs is always followed by a blank line.</step>
+    <step>Verify exactly one blank line exists between consecutive `uncoverenv` wrappers to protect vertical rule rendering.</step>
+    <step>Verify hypothesis notation strictly uses the math tokens $H_0$ and $H_a$.</step>
     <step>Check that all text-based ampersands (&amp;) and percent signs (\%) are properly escaped as \&amp; and \%.</step>
     <step>Verify \caption{} is completely absent, and all tables use booktabs and header-rows={1}.</step>
-    <step>Ensure list integrity is intact: itemize and enumerate environments must be contiguous and unbroken around display math blocks.</step>
-    <step>Verify overlay logic correctly matches the pedagogical mode (fading vs. standard reveals).</step>
-    <step>Check that ALL legacy macros (e.g., \mat{}, \mathrm{Cov}) have been stripped and replaced with standard LaTeX commands (\pmb{}, \text{Cov}).</step>    
-    <step>Verify that \sol{...} blocks are used strategically for intermediate math steps and have not hidden primary theorem definitions or final conclusions.</step>
-    <step>Verify that ALL examples and exercises are consolidated exclusively under the \begin{example} environment or wrapped in the \exampleon/\exampleoff toggles, with zero legacy 'exercise' or 'problem' environments remaining.</step>
-    <step>Verify all critical values and quantiles use the programmatic lower tail notation, place the probability parameter first, and use the correct comma or semicolon separator depending on the distribution.</step>
-    <step>Verify that all single-character math accents (e.g., \hat, \tilde, \bar) are applied without curly braces (e.g., \hat\mu instead of \hat{\mu}) to preserve OpenType optical alignment.</step>
+    <step>Ensure list integrity is intact: itemize and enumerate environments must be contiguous around display math blocks.</step>
+    <step>Check that ALL legacy macros (e.g., \mat{}, \mbox{}) have been stripped and replaced with standard commands.</step>    
+    <step>Verify that \sol{...} blocks are used strategically and contain ZERO blank lines inside their arguments.</step>
+    <step>Verify all critical values and quantiles use the programmatic lower-tail notation with appropriate delimiters.</step>
+    <step>Verify that all single-character math accents (e.g., \hat, \tilde, \bar) are applied without curly braces.</step>
+    <step>Verify the Review slide directly mirrors the Bloom's Taxonomy action verbs established in the Objectives slide.</step>
   </validation_checklist>
 
   <output_format>
-    Output the finalized, full-length, completely worked-out LaTeX file ready for compilation inside a single latex code block. Do not output any internal AI citations in the LaTeX code.
+    Output the finalized, full-length, completely worked-out LaTeX file ready for compilation inside a single latex code block. Add a `\begin{note}...\end{note}` block at the end detailing any proactive documentation refactoring. Do not output any internal AI citations in the LaTeX code.
   </output_format>
 </system_prompt>
