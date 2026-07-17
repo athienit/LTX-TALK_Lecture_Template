@@ -161,6 +161,15 @@
 				\vspace{2pt}\end{block}
 		\end{minipage}\vspace{0.5em}}  
 	
+	\newenvironment{exercise}[1][]{%
+		\vspace{0.5em}\noindent
+		\textcolor{UFOrange}{\vrule width 3pt}\hspace{0.5em}%
+		\begin{minipage}[t]{\dimexpr\textwidth-3pt-0.5em\relax}
+			\begin{block}{\strut\color{UFOrange}\bfseries Exercise\if\relax\detokenize{#1}\relax\else: #1\fi}
+				\vspace{2pt}}{%
+				\vspace{2pt}\end{block}
+		\end{minipage}\vspace{0.5em}}  
+	
 	\newenvironment{remark}[1][]{%
 		\vspace{0.5em}\noindent
 		\textcolor{UFGreen}{\vrule width 3pt}\hspace{0.5em}%

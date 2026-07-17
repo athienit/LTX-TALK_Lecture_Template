@@ -3,6 +3,6 @@
 \contentsline {section}{Lists/Tables/Figures}{4}{section.2}%
 \contentsline {section}{Math/Verbatim}{11}{section.3}%
 \contentsline {section}{Custom Frames and Blocks}{16}{section.4}%
-\contentsline {section}{Toggle Visibility Logic}{23}{section.5}%
-\contentsline {section}{UF Brand Center}{35}{section.6}%
-\contentsline {section}{Summary}{37}{section.7}%
+\contentsline {section}{Toggle Visibility Logic}{24}{section.5}%
+\contentsline {section}{UF Brand Center}{36}{section.6}%
+\contentsline {section}{Summary}{38}{section.7}%

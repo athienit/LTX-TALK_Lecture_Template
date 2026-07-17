@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.24.0 (MiKTeX 26.2) (format=lualatex 2026.5.11)  7 JUL 2026 14:04
+This is LuaHBTeX, Version 1.24.0 (MiKTeX 26.2) (format=lualatex 2026.5.11)  17 JUL 2026 17:19
  restricted system commands enabled.
 **Lecture.tex
 (./Lecture.tex
@@ -1999,36 +1999,36 @@ LaTeX template Info: Declaring instance 'std' of type header on line 157.
 
 ] [21
 
-]
-
-LaTeX template Info: Declaring instance 'std' of type header on line 194.
-
- [22
+] [22
 
 ]
 
-LaTeX template Info: Declaring instance 'std' of type header on line 216.
+LaTeX template Info: Declaring instance 'std' of type header on line 200.
 
-
-LaTeX template Info: Declaring instance 'std' of type header on line 218.
-
- (./Lecture.toc) [23
+ [23
 
 ]
 
-LaTeX template Info: Declaring instance 'std' of type header on line 218.
+LaTeX template Info: Declaring instance 'std' of type header on line 222.
 
- [24
+
+LaTeX template Info: Declaring instance 'std' of type header on line 224.
+
+ (./Lecture.toc) [24
+
+]
+
+LaTeX template Info: Declaring instance 'std' of type header on line 224.
+
+ [25
 
 ]
 LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <20.74> not available
-(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 254.
- [25
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 260.
+ [26
 
 
 warning  (pdf backend): pop empty color page stack 1
-] [26
-
 ] [27
 
 ] [28
@@ -2045,38 +2045,40 @@ warning  (pdf backend): pop empty color page stack 1
 
 ] [34
 
-]
-
-LaTeX template Info: Declaring instance 'std' of type header on line 292.
-
- (./Lecture.toc) [35
+] [35
 
 ]
 
-LaTeX template Info: Declaring instance 'std' of type header on line 292.
+LaTeX template Info: Declaring instance 'std' of type header on line 298.
 
- [36
-
-]
-
-LaTeX template Info: Declaring instance 'std' of type header on line 303.
-
-
-(./Lecture.toc) [37
+ (./Lecture.toc) [36
 
 ]
 
-LaTeX template Info: Declaring instance 'std' of type header on line 303.
+LaTeX template Info: Declaring instance 'std' of type header on line 298.
 
- [38
+ [37
 
-] [39
+]
+
+LaTeX template Info: Declaring instance 'std' of type header on line 309.
+
+
+(./Lecture.toc) [38
+
+]
+
+LaTeX template Info: Declaring instance 'std' of type header on line 309.
+
+ [39
 
 ] [40
 
 ] [41
 
 ] [42
+
+] [43
 
 ]
 \tf@toc=\write7
@@ -2108,8 +2110,8 @@ L3 programming layer <2026-03-20>
 
 
 Package tagpdf Info: Finalizing the tagging structure:
-(tagpdf)             Writing out ~718 structure objects
-(tagpdf)             with ~624 'MC' leaf nodes.
+(tagpdf)             Writing out ~726 structure objects
+(tagpdf)             with ~631 'MC' leaf nodes.
 (tagpdf)             Be patient if there are lots of objects!
 
 Package tagpdf Info: writing ParentTree
@@ -2122,15 +2124,15 @@ Package tagpdf Info: writing Root
 )
 
 Here is how much of LuaTeX's memory you used:
- 49770 strings out of 475900
+ 49793 strings out of 475900
  125049,2373549 words of node,token memory allocated
  622 words of node memory still in use:
    7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 2 glyph, 42 attribute, 58 glue_spec
 , 13 attribute_list, 3 write nodes
    avail lists: 1:9,2:2189,3:385,4:125,5:226,6:58,7:2138,8:23,9:347,10:24,11:178
 
- 70872 multiletter control sequences out of 65536+600000
- 66 fonts using 30903479 bytes
+ 70893 multiletter control sequences out of 65536+600000
+ 66 fonts using 30903495 bytes
  109i,11n,108p,758b,837s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/users/forge/appdata/local/programs/miktex/fonts/opentype/public/lm/lmmono12-
 regular.otf><c:/users/forge/appdata/local/programs/miktex/fonts/opentype/public/
@@ -2144,9 +2146,9 @@ ge/appdata/local/programs/miktex/fonts/opentype/public/lm/lmmono10-regular.otf><
 c:/users/forge/appdata/local/programs/miktex/fonts/opentype/public/newcomputermo
 dern/newcmsans10-bold.otf><c:/users/forge/appdata/local/programs/miktex/fonts/op
 entype/public/newcomputermodern/newcmsans10-regular.otf>
-Output written on Lecture.pdf (42 pages, 2127881 bytes).
+Output written on Lecture.pdf (43 pages, 2133736 bytes).
 
-PDF statistics: 1402 PDF objects out of 1440 (max. 8388607)
- 138 named destinations out of 1000 (max. 1048576)
- 4252 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 1415 PDF objects out of 1440 (max. 8388607)
+ 139 named destinations out of 1000 (max. 1048576)
+ 4292 words of extra memory for PDF output out of 10000 (max. 100000000)
 

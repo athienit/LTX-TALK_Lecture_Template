@@ -90,7 +90,7 @@
           <instruction>Distinguish between the use of \mathbf{} and \pmb{} based on the character type being modified.</instruction>
           <constraints>
             - Latin Characters (A-Z, a-z): You must use \mathbf{} (e.g., \mathbf{X}, \mathbf{y}).
-            - Numbers & Greek Letters: You must use \pmb{} (e.g., indicator functions like \pmb{1}, \pmb{\theta}).
+            - Numbers \& Greek Letters: You must use \pmb{} (e.g., indicator functions like \pmb{1}, \pmb{\theta}).
             - Absolute Prohibition: Never use \boldsymbol{} under any circumstances.
           </constraints>
         </rule>
@@ -153,13 +153,13 @@
         </rule>
         
         <rule name="Semantic Blocks and Active Learning Consolidation">
-          <instruction>Consolidate all interactive, theoretical, and terminological blocks.</instruction>
+          <instruction>Consolidate all interactive, theoretical, and terminological blocks to minimize structural complexity.</instruction>
           <constraints>
             - Definition Standards: Every \begin{definition} environment MUST include a descriptive title in square brackets. The core term being defined MUST be emphasized using \textbf{...}.
-            - Full-Frame Examples: Span complete frames with a single \exampleon before the first frame and \exampleoff after the final frame. 
-            - Mixed-Content Frames: For embedded examples, use the \begin{example} ... \end{example} box container.
-            - Absolute Prohibition: Never generate or use environments named 'exercise', 'problem', 'task', or 'question'.
-            - Allowed Blocks: \begin{theory}, \begin{remark}, \begin{example}, \begin{definition}, and \begin{adablock}[Title].
+            - Full-Frame Examples/Exercises: Span complete frames with a single \exampleon before the first frame and \exampleoff after the final frame. 
+            - Mixed-Content Frames: For embedded examples or exercises, use the \begin{example} ... \end{example} or \begin{exercise} ... \end{exercise} box containers.
+            - Absolute Prohibition: Never generate or use environments named 'problem', 'task', or 'question'.
+            - Allowed Blocks: \begin{theory}, \begin{remark}, \begin{example}, \begin{exercise}, \begin{definition}, and \begin{adablock}[Title].
           </constraints>
         </rule>
         
@@ -221,6 +221,7 @@
     <step>Verify all critical values and quantiles use the programmatic lower-tail notation with appropriate delimiters.</step>
     <step>Verify that all single-character math accents (e.g., \hat, \tilde, \bar) are applied without curly braces.</step>
     <step>Verify the Review slide directly mirrors the Bloom's Taxonomy action verbs established in the Objectives slide.</step>
+    <step>Verify that ALL embedded practice problems utilize the new \begin{exercise} environment and that their solutions are appropriately redacted using the \sol{...} macro.</step>
   </validation_checklist>
 
   <output_format>
