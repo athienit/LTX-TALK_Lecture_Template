@@ -5,13 +5,13 @@
 
   <prerequisite_validation>
     <instruction>
-      Before initiating any slide translation, you MUST verify that the user has provided the following three components in the context:
-      1. The course Syllabus (for extracting SLOs, course name, and pedagogical context).
-      2. The legacy LaTeX lecture file to be translated (e.g., L01.tex).  
-      3. The current template preamble (`SlidesPreambleADA.tex`) or its explicitly referenced macros.
+      Before initiating any slide translation, you MUST verify the presence of three core components. The Syllabus and Preamble only need to be provided ONCE per chat session; you must check your entire conversational history to see if they were already provided. 
+      1. The course Syllabus (for extracting SLOs, course name, and pedagogical context). 
+      2. The template preamble (`SlidesPreambleADA.tex`) or its explicitly referenced macros.
+      3. The legacy LaTeX lecture file to be translated (which must be provided in the current prompt).
     </instruction>
     <action_on_fail>
-      If ANY of these three components are missing, output EXACTLY the following string and halt all generation: 'ERROR: MISSING_PREREQUISITES. Please provide the Syllabus, Legacy LaTeX file, and Preamble.
+      If the Syllabus or Preamble cannot be found anywhere in the chat history, or if the legacy LaTeX file is missing from the current request, output EXACTLY the following string and halt all generation: 'ERROR: MISSING_PREREQUISITES. Please provide the Syllabus, Legacy LaTeX file, and Preamble.'
     </action_on_fail>
   </prerequisite_validation>
 
@@ -79,6 +79,14 @@
             - NEVER wrap single characters in curly braces when using accent macros like \hat, \tilde, \bar, or \vec (e.g., Prohibit \hat{\mu}, \tilde{\theta}, \bar{Y}).
             - MANDATORY: Apply the accent directly to the single token (e.g., Use \hat\mu, \tilde\theta, \bar Y).
             - EXCEPTIONS: You must use braces ONLY if the accented target is a multi-character subformula that requires forced grouping (e.g., \widehat{XY}).
+          </constraints>
+        </rule>
+
+        <rule name="Limit and Convergence Notation">
+          <instruction>Modernize all stacked convergence arrows to use the native \xrightarrow command to ensure clean MathML tagging and optical alignment.</instruction>
+          <constraints>
+            - Prohibited: NEVER use \overset and/or \underset combined with arrow commands (like \rightarrow or \longrightarrow) to indicate limits, distribution convergence, or conditions (e.g., prohibit \overset{d}{\longrightarrow} or \overset{H_0}{\underset{n\to\infty}{\longrightarrow}}).
+            - Mandatory: You must convert these exclusively to \xrightarrow[bottom]{top} (e.g., use \xrightarrow{d} or \xrightarrow[n\to\infty]{H_0}).
           </constraints>
         </rule>
 
@@ -222,6 +230,7 @@
     <step>Verify that all single-character math accents (e.g., \hat, \tilde, \bar) are applied without curly braces.</step>
     <step>Verify the Review slide directly mirrors the Bloom's Taxonomy action verbs established in the Objectives slide.</step>
     <step>Verify that ALL embedded practice problems utilize the new \begin{exercise} environment and that their solutions are appropriately redacted using the \sol{...} macro.</step>
+    <step>Verify that all convergence and limit arrows use \xrightarrow, completely eliminating any nested \overset and \underset arrow constructions.</step>
   </validation_checklist>
 
   <output_format>
